@@ -1,0 +1,134 @@
+#!/usr/bin/env bash
+
+# directories
+work_dir="/tmp/zipf"
+dumppath="$work_dir/dumpfiles"
+tokenpath="$work_dir/tokens"
+resultpath="$work_dir/results"
+# files
+mapfile="$resultpath/rank.freq.map"
+bvalfile="$resultpath/bvalues.map"
+plotdata="$resultpath/rank.freq.plot"
+plotimg="$resultpath/zipf_plot_greek.png"
+
+fetch() {
+	echo "Starting fetch process.."
+	local src_url="http://el.wikipedia.org/wiki/%CE%95%CE%B9%CE%B4%CE%B9%CE%BA%CF%8C:%CE%A4%CF%85%CF%87%CE%B1%CE%AF%CE%B1"
+
+	for file in {1..2000}
+	do
+		elinks -dump -no-numbering -no-references "$src_url" > "$dumppath/$file.raw"
+	done
+
+	echo "Fetching done"
+}
+
+tokenize() {
+	echo "Processing tokens.."
+
+	cd "$dumppath"
+	shopt -s nullglob dotglob
+	local files=(*)
+	(( ${#files[*]} )) || echo "no data to process. try fetch first" && exit 1
+	shopt -u nullglob dotglob
+
+	for rawfile in *.raw
+	do
+		local tokfile="$tokenpath/${rawfile/raw/tok}"
+		sed -r "/.*(\s+Link|IMG|\s+\*|\s+_|^\[|^$).*/d" "$rawfile" > "$tokfile"
+		sed -i "s/[^α-ωΑ-Ω]/\n/g" "$tokfile"
+		sed -i "/^$/d" "$tokfile"
+		sed -i "s/\(.*\)/\L\1/" "$tokfile"
+	done
+
+	echo "Tokens ready"
+}
+
+sortmap() {
+	echo "Mapping started.."
+
+	cd "$tokenpath"
+	shopt -s nullglob dotglob
+	local files=(*)
+	(( ${#files[*]} )) || echo "cannot read data. try tokenize first" && exit 1
+	shopt -u nullglob dotglob
+
+	sort *.tok | uniq -ci | sort -nr | pr -n -t > "$mapfile"
+
+	echo "Mapping complete"
+}
+
+calcb() {
+	echo "Calculating b for all words.."
+	# Zifp's Law: 
+	# Freq = 1 / rank^b  =>  log(Freq) = -b * log(rank)
+	# => b = - log(Freq) / log(rank) = -log[rank](Freq)
+
+	[ ! -e "$mapfile" ] && echo "cannot read data. try mapping first" && exit 1
+
+	local bval=0 bw=0 nwords=$(wc -l < "$mapfile")
+	echo "Rank\tFrequency\tPn-Frequency\tb-value\tWord" > "$bvalfile"
+
+	while read rank freq word
+	do
+		PnFreq=$(bc -l <<< "$freq / $nwords")
+		(( "$rank" <= 1 )) && bw=0 ||
+		bw="$(bc -l <<< "l($PnFreq) / l($rank)")"
+		echo -e "$rank\t$freq\t$PnFreq\t$bw\t$word" >> "$bvalfile"
+		bval="$(bc -l <<< "$bval + $bw")"
+	done < "$mapfile"
+	bval="$(bc -l <<< "$bval / $nwords")"
+	echo "Final b is $bval" >> "$bvalfile"
+
+	echo "Done calculating"
+}
+
+graph() {
+	echo "Starting graph creation"
+
+	[ ! -e "$mapfile" ] && \
+		echo "cannot read data. try mapping first" && exit 1
+
+	awk '{print $1 " " $2}' "$mapfile" > "$plotdata"
+	gnuplot << EOF
+set logscale
+set xlabel "Rank"
+set ylabel "Frequency"
+set title "Zipf's Law - Greek language - Wikipedia documents collection"
+set term png
+set output "$plotimg"
+plot "$plotdata"
+EOF
+
+	echo "Graph created"
+}
+
+usage() {
+	cat << EOF
+usage: $(basename "$0") options
+
+	Options are:
+	-a	all, same as -t -m -b -g [Note: no fetch]
+	-f	fetch files
+	-t	tokenize files
+	-m	sort and map tokens - get rank and freq
+	-b	calculate b
+	-g	create graph plot
+	-h	help, print this help message
+EOF
+}
+
+(( !$# )) && usage && exit 1
+mkdir -p "$work_dir" "$dumppath" "$tokenpath" "$resultpath"
+user_dir="$PWD"
+case "$1" in 
+	-a) tokenize; sortmap; calcb; graph;;
+	-f) fetch;;
+	-t) tokenize;;
+	-s) sortmap;;
+	-b) calcb;;
+	-g) graph;;
+	-h) usage && exit 0;;
+	*) usage && exit 1;;
+esac
+cd "$user_dir"
