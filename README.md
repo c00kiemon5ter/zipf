@@ -26,9 +26,9 @@ Results are placed on [`/tmp/zipf/results`](tree/master/data/results)
 * [`zipf_plot_greek.png`](blob/master/data/resulrs/zipf_plot_greek.png) The graph image
 
 ## Data
-Collected data are placed on [`/tmp/zipf/dumpfiles`](tree/master/data/dumpfiles)
-Processed data are placed on [`/tmp/zipf/tokens`](tree/master/data/tokens)
-Data are collected from [the Greek Wikipedia](http://el.wikipedia.org) using it's [random page](http://el.wikipedia.org/wiki/%CE%95%CE%B9%CE%B4%CE%B9%CE%BA%CF%8C:%CE%A4%CF%85%CF%87%CE%B1%CE%AF%CE%B1) generator. The script currently collects 2000 random pages.
+Collected data are placed on [`/tmp/zipf/dumpfiles`](tree/master/data/dumpfiles) <br/>
+Processed data are placed on [`/tmp/zipf/tokens`](tree/master/data/tokens) <br/>
+Data are collected from [the Greek Wikipedia](http://el.wikipedia.org) using it's [random page](http://el.wikipedia.org/wiki/%CE%95%CE%B9%CE%B4%CE%B9%CE%BA%CF%8C:%CE%A4%CF%85%CF%87%CE%B1%CE%AF%CE%B1) generator. The script currently collects 2000 random pages as default.
 
 ## Dependencies
 Dependencies include 
