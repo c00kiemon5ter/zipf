@@ -1,8 +1,8 @@
 # Zipf
-A script to fetch data, process them, and make word lists. Manipulate the lists to find word frequencies and sort according to rank. Calculate related data to prove and hold [Zipf's Law](http://en.wikipedia.org/wiki/Zipf) for the Greek language. Create related graph-plot. 
+A script to fetch data, process them, and make word lists. Manipulate the lists to find word frequencies and sort according to rank. Calculate related data to prove and hold [Zipf's Law](http://en.wikipedia.org/wiki/Zipf#Zipf.27s_law) for the Greek language. Create related graph-plot. 
 
 ## Plot Graph
-![gnuplot-graph](zipf/blob/master/data/results/zipf_plot_greek.png)
+![gnuplot-graph](zipf/raw/master/data/results/zipf_plot_greek.png)
 
 ## Usage 
 
