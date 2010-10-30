@@ -6,7 +6,7 @@ A script to fetch data, process them, and make word lists. Manipulate the lists 
 
 ## Usage 
 
-	usage: retrieve.sh options
+	usage: retrieve options
 
 		Options are:
 			-a	all, same as -t -m -b -g [Note: no fetch]
