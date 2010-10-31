@@ -120,7 +120,6 @@ EOF
 
 (( !$# )) && usage && exit 1
 mkdir -p "$work_dir" "$dumppath" "$tokenpath" "$resultpath"
-user_dir="$PWD"
 case "$1" in 
 	-a) tokenize; sortmap; calcb; graph;;
 	-f) fetch;;
@@ -131,4 +130,4 @@ case "$1" in
 	-h) usage && exit 0;;
 	*) usage && exit 1;;
 esac
-cd "$user_dir"
+exit 0
