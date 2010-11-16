@@ -29,7 +29,7 @@ tokenize() {
 	cd "$dumppath"
 	shopt -s nullglob dotglob
 	local files=(*)
-	(( ${#files[*]} )) || echo "no data to process. try fetch first" && exit 1
+	(( ! ${#files[*]} )) && echo "no data to process. try fetch first" && exit 1
 	shopt -u nullglob dotglob
 
 	for rawfile in *.raw
@@ -50,7 +50,7 @@ sortmap() {
 	cd "$tokenpath"
 	shopt -s nullglob dotglob
 	local files=(*)
-	(( ${#files[*]} )) || echo "cannot read data. try tokenize first" && exit 1
+	(( ! ${#files[*]} )) && echo "cannot read data. try tokenize first" && exit 1
 	shopt -u nullglob dotglob
 
 	sort *.tok | uniq -ci | sort -nr | pr -n -t > "$mapfile"
