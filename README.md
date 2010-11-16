@@ -9,6 +9,10 @@ A script to fetch data, process them, and make word lists. Manipulate the lists 
 * Words occuring once: 70.247
 * Final b for all words is -1.06015791025300522471
 
+## Review Paper
+Grab the paper [here](zipf/raw/master/doc/Ioannis_Kanakarakis_zipf_law.pdf)
+or read it online [here](http://docs.google.com/viewer?url=https://github.com/c00kiemon5ter/zipf/raw/master/doc/Ioannis_Kanakarakis_zipf_law.pdf)
+
 ## Plot Graph
 ![gnuplot-graph](zipf/raw/master/data/results/zipf_plot_greek.png)
 
