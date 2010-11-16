@@ -15,7 +15,7 @@ fetch() {
 	echo "Starting fetch process.."
 	local src_url="http://el.wikipedia.org/wiki/%CE%95%CE%B9%CE%B4%CE%B9%CE%BA%CF%8C:%CE%A4%CF%85%CF%87%CE%B1%CE%AF%CE%B1"
 
-	for file in {1..2000}
+	for file in {1..10000}
 	do
 		elinks -dump -no-numbering -no-references "$src_url" > "$dumppath/$file.raw"
 	done
