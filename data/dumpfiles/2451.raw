@@ -1,0 +1,208 @@
+   Link: Επεξεργασία (alternate)
+   Link: Επεξεργασία (edit)
+   Link: Βικιπαίδεια (el) (search)
+   Link: copyright
+   Link: Βικιπαίδεια Atom Συνδρομή (alternate)
+
+                         Γραμματική Montague
+
+   Από τη Βικιπαίδεια, την ελεύθερη
+   εγκυκλοπαίδεια
+   Μετάβαση σε: πλοήγηση, αναζήτηση
+
+   H γραμματική του Montague (Montague grammar) είναι
+   μια προσέγγιση στη σημασιολογία των
+   φυσικών γλωσσών που πήρε το όνομά της
+   από τον Αμερικανό επιστήμονα της
+   λογικής Richard Montague. Η γραμματική του Montague
+   βασίζεται στην τυπική λογική, και
+   ειδικότερα στην κατηγορηματική λογική
+   υψηλότερης τάξης και το λ-λογισμό και
+   κάνει χρήση εννοιών της νοηματικής
+   λογικής μέσω μοντέλων Kripke. Ο Montague υπήρξε
+   πρωτοπόρος αυτής της προσέγγισης κατά
+   τη δεκαετία του 1960 και στην αρχή της
+   δεκαετίας του 1970.
+
+   Η θέση του Montague ήταν ότι οι φυσικές
+   γλώσσες (όπως η αγγλική) και οι τυπικες
+   γλώσσες (όπως οι γλώσσες
+   προγραμματισμού) μπορούν να μελετηθούν
+   με τον ίδιο τρόπο.
+
+         "Δεν υπάρχει κατά την άποψή μου
+     κάποια σημαντική θεωρητική διαφορά
+     μεταξύ των φυσικών γλωσσών και των
+     τεχνητών γλωσσών των επιστημόνων της
+     λογικής, στην πραγματικότητα θεωρώ ότι
+     είναι πιθανό να κατανοήσουμε τη
+     σύνταξη και τη σημασιολογία και των δύο
+     τύπων γλώσσας με μια μοναδική, φυσική
+     και μαθηματικά ακριβή θεωρία. Σε αυτό
+     το σημείο διαφέρω από κάποιους
+     φιλοσόφους αλλά πιστεύω ότι συμφωνώ με
+     τον Νόαμ Τσόμσκι και τους συνεργάτες
+     του." (Universal Grammar 1970)
+
+   Ο Montague δημοσίευσε αυτό που στη συνέχεια
+   θα γινόταν γνωστό σαν γραμματική Montague^[1]
+   σε τρεις δημοσιεύσεις-σταθμούς:
+
+     * 1970: "Universal grammar" (= UG)^[2]
+     * 1970: "English as a Formal Language" (= EFL)^[3]
+     * 1973: "The Proper Treatment of Quantification in Ordinary English" (=
+       PTQ)^[4]
+
+   Ο χειρισμός των ποσοδεικτών από τον Montague
+   έχει συνδεθεί με την έννοια της
+   συνέχειας στη σημασιολογία των γλωσσών
+   προγραμματισμού.^[5]
+
+   Πίνακας περιεχομένων
+
+     * 1 Περαιτέρω διάβασμα
+     * 2 Παραπομπές
+     * 3 Δείτε επίσης
+     * 4 Εξωτερικοί σύνδεσμοι
+
+[Επεξεργασία] Περαιτέρω διάβασμα
+
+     * Richmond Thomason (ed.): Formal Philosophy. Selected Papers by Richard
+       Montague. New Haven, 1974, ISBN 0300024126 (Αγγλικά)
+     * Paul Portner, Barbara H. Partee (eds.): Formal Semantics: The
+       Essential Readings, Blackwell, 2002. ISBN 0631215425 (Αγγλικά)
+     * D.R. Dowty, R.E. Wall and S. Peters: Introduction to Montague
+       Semantics. Kluwer Academic Publishers, 1981, ISBN 9027711429
+       (Αγγλικά)
+     * Emmon Bach: Informal Lectures on Formal Semantics. SUNY Press, 1989,
+       ISBN 0887067719 (Αγγλικά)
+     * B.H. Partee, A.G.B. ter Meulen and R.E. Wall: Mathematical Methods in
+       Linguistics. Kluwer Academic Publishers, 1990, ISBN 9027722455
+       (Αγγλικά)
+     * B.H. Partee with Herman Hendriks: Montague Grammar. In: Handbook of
+       Logic and Language, eds. J.F.A.K. van Benthem and A.G.B. ter Meulen
+       Elsevier/MIT Press, 1997, pp. 5–92. ISBN 0262220539 (Αγγλικά)
+
+[Επεξεργασία] Παραπομπές
+
+    1. ↑ Η γλωσσολόγος Barbara Partee ισχυρίζεται
+       με αρκετά πειστικό τρόπο ότι
+       δημιούργησε τον όρο το 1971 “για το
+       σύστημα που περιγράφεται στα έργα του
+       Montague“ UG, EFL και “ιδιαίτερα στο PTQ”.
+       Δείτε το δοκίμιό της "Reflections of a Formal
+       Semanticist as of Feb 2005", σελ. 14, υποσημείωση 36.
+    2. ↑ "Universal grammar". Theoria 36 (1970), 373–398. (reprinted in
+       Thomason, 1974) (Αγγλικά)
+    3. ↑ "English as a Formal Language". In: Bruno Visentini (ed.):
+       Linguaggi nella società e nella tecnica. Mailand 1970, 189–223.
+       (reprinted in Thomason, 1974) (Αγγλικά)
+    4. ↑ "The Proper Treatment of Quantification in Ordinary English". In:
+       Jaakko Hintikka, Julius Moravcsik, Patrick Suppes (eds.): Approaches
+       to Natural Language. Dordrecht 1973, 221–242. (τυπώθηκε
+       πάλι στον Thomason, 1974) (Αγγλικά)
+    5. ↑ Βλ. Continuations in Natural Language (Αγγλικά)
+
+[Επεξεργασία] Δείτε επίσης
+
+     * Μπάρμπαρα Παρτί
+     * Τυπική σημασιολογία
+
+[Επεξεργασία] Εξωτερικοί σύνδεσμοι
+
+     * Δωρεάν συντακτικός αναλυτής για
+       γραμματική Montague σε μια
+       μη-ντετερμινιστική επέκταση της Common
+       Lisp (Αγγλικά).
+     * Montague Grammar in historical context. / The theory and the substance
+       of Montague grammar. Central principles. / Further developments and
+       controversies. by Barbara H. Partee (Αγγλικά).
+
+                      Στο άρθρο αυτό έχει
+                      ενσωματωθεί κείμενο από το
+                      άρθρο Montague grammar της
+   Wikipedia-logo.png Αγγλόγλωσσης Βικιπαίδειας, η
+                      οποία διανέμεται υπό την GNU FDL
+                      και την CC-BY-SA 3.0.
+                      (ιστορικό/συντάκτες).
+
+   Ανακτήθηκε από
+   "http://el.wikipedia.org/wiki/%CE%93%CF%81%CE%B1%CE%BC%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CE%AE_Montague"
+   Κατηγορίες: Γραμματική | Λ-λογισμός |
+   Σημασιολογία | Τυπικές γλώσσες
+
+      Προσωπικά εργαλεία
+
+     * Νέα χαρακτηριστικά
+     * Δημιουργία Λογαριασμού/Είσοδος
+
+      Περιοχές ονομάτων
+
+     * Άρθρο
+     * Συζήτηση
+
+      Παραλλαγές
+
+      Εμφανίσεις
+
+     * Ανάγνωση
+     * Επεξεργασία
+     * Προβολή ιστορικού
+
+      Ενέργειες
+
+      Αναζήτηση
+
+   _____________________ Αναζήτηση
+
+      Πλοήγηση
+
+     * Κύρια πύλη
+     * Κατάλογος άρθρων
+     * Αξιόλογα άρθρα
+     * Τρέχοντα γεγονότα
+     * Τυχαία σελίδα
+
+      Συμμετοχή
+
+     * Πύλη Κοινότητας
+     * Αγορά
+     * Πρόσφατες αλλαγές
+     * Βοήθεια
+     * Επικοινωνία
+     * Δωρεές
+
+      Εκτύπωση/εξαγωγή
+
+     * Δημιουργία βιβλίου
+     * Κατέβασμα ως PDF
+     * Έκδοση εκτύπωσης
+
+      Εργαλειοθήκη
+
+     * Συνδέσεις προς εδώ
+     * Σχετικές αλλαγές
+     * Ειδικές σελίδες
+     * Σταθερός σύνδεσμος
+     * Παραπομπή
+
+      Άλλες γλώσσες
+
+     * العربية
+     * English
+     * Hrvatski
+     * 日本語
+
+     * Τελευταία τροποποίηση 17:38, 16 Οκτωβρίου
+       2010.
+     * Όλα τα κείμενα είναι διαθέσιμα υπό την
+       Creative Commons Attribution/Share-Alike License· μπορεί να
+       ισχύουν και πρόσθετοι όροι. Δείτε τους
+       Όρους Χρήσης για λεπτομέρειες.
+
+     * Πολιτική προσωπικών δεδομένων
+     * Για τη Βικιπαίδεια
+     * Αποποίηση ευθυνών
+
+     * Powered by MediaWiki
+     * Wikimedia Foundation
