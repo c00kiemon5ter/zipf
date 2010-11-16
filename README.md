@@ -44,3 +44,5 @@ Dependencies include
 * [`elinks`](http://elinks.or.cz/) An advanced and well-established feature-rich text mode web browser.
 * [`gnuplot`](http://www.gnuplot.info/) a portable command-line driven graphing utility for linux, OS/2, MS Windows, OSX, VMS, and many other platforms
 
+## License
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Zipf Law for the Greek Language</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/c00kiemon5ter/zipf" property="cc:attributionName" rel="cc:attributionURL">Ivan Kanakarakis</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
