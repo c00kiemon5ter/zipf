@@ -124,7 +124,7 @@ case "$1" in
 	-a) tokenize; sortmap; calcb; graph;;
 	-f) fetch;;
 	-t) tokenize;;
-	-s) sortmap;;
+	-m) sortmap;;
 	-b) calcb;;
 	-g) graph;;
 	-h) usage && exit 0;;
