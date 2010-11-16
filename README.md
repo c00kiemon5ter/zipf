@@ -7,6 +7,7 @@ A script to fetch data, process them, and make word lists. Manipulate the lists 
 * Vocabulary size: 174.258 (unique words)
 * Words occuring more than 10 times: 31.133
 * Words occuring once: 70.247
+* Final b for all words is -1.06015791025300522471
 
 ## Plot Graph
 ![gnuplot-graph](zipf/raw/ten/data/results/zipf_plot_greek.png)
