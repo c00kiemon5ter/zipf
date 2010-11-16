@@ -1,0 +1,243 @@
+   Link: Επεξεργασία (alternate)
+   Link: Επεξεργασία (edit)
+   Link: Βικιπαίδεια (el) (search)
+   Link: copyright
+   Link: Βικιπαίδεια Atom Συνδρομή (alternate)
+
+                                      Ροκέ
+
+   Από τη Βικιπαίδεια, την ελεύθερη εγκυκλοπαίδεια
+   Μετάβαση σε: πλοήγηση, αναζήτηση
+
+   Το ροκέ είναι μια ειδική κίνηση στο σκάκι που συμμετέχουν ο βασιλιάς και
+   ένας από τους δυο πύργους. Πραγματοποιείται με την μετακίνηση του βασιλιά
+   δύο τετράγωνα προς τον πύργο και την μετακίνηση του πύργου στο τετράγωνο
+   ανάμεσα στην αρχική και τελική θέση του βασιλιά.
+
+   Το ροκέ γενικά χρονολογείται στον 14ο ή 15ο αιώνα. Οι παλιότερες
+   παραλλαγές του σκακιού δεν είχαν ροκέ.
+
+   Οι όροι για να επιτραπεί το ροκέ είναι:
+
+    1. Ο βασιλιάς δεν πρέπει να έχει μετακινηθεί ποτέ από την αρχική θέση
+       του.
+    2. Ο πύργος που θα συμμετάσχει επίσης δεν πρέπει να έχει μετακινηθεί ποτέ
+       από την αρχική θέση του..
+    3. Ο βασιλιάς δεν πρέπει να είναι υπό την απειλή σαχ την δεδομένη στιγμή.
+    4. Το ενδιάμεσο τετράγωνο από το οποίο θα περάσει ο βασιλιάς δεν πρέπει
+       να απειλείται.
+    5. Το τελικό τετράγωνο που θα καταλήξει ο βασιλιάς βεβαίως δεν πρέπει να
+       απειλείται.
+    6. Δεν πρέπει να παρεμβάλλονται κομμάτια μεταξύ του βασιλιά και του
+       πύργου.
+
+   Ο παίκτης πρέπει να πιάσει πρώτα τον βασιλιά και μετά τον πύργο. Αν πιάσει
+   σκόπιμα τον πύργο πριν πιάσει τον βασιλιά χάνεται το δικαίωμα ροκέ με τον
+   συγκεκριμένο πύργο. Αν μετακινήσει τον βασιλιά και τον αφήσει στο
+   τετράγωνο που κανονικά θα βρεθεί μετά το ροκέ τότε είναι υποχρεωμένος να
+   ολοκληρώσει την κίνηση τού ροκέ μετακινώντας και τον αντίστοιχο πύργο.
+
+   8 Chess   Chess   Chess   Chess   Chess l40.png  Chess   Chess   Chess
+     l40.png d40.png l40.png d40.png                d40.png l40.png d40.png
+   7 Chess   Chess   Chess   Chess   Chess d40.png  Chess   Chess   Chess
+     d40.png l40.png d40.png l40.png                l40.png d40.png l40.png
+   6 Chess   Chess   Chess   Chess   Chess l40.png  Chess   Chess   Chess
+     l40.png d40.png l40.png d40.png                d40.png l40.png d40.png
+   5 Chess   Chess   Chess   Chess   Chess d40.png  Chess   Chess   Chess
+     d40.png l40.png d40.png l40.png                l40.png d40.png l40.png
+   4 Chess   Chess   Chess   Chess   Chess l40.png  Chess   Chess   Chess
+     l40.png d40.png l40.png d40.png                d40.png l40.png d40.png
+   3 Chess   Chess   Chess   Chess   Chess d40.png  Chess   Chess   Chess
+     d40.png l40.png d40.png l40.png                l40.png d40.png l40.png
+   2 Chess   Chess   Chess   Chess   Chess l40.png  Chess   Chess   Chess
+     l40.png d40.png l40.png d40.png                d40.png l40.png d40.png
+   1 Chess   Chess   Chess   Chess   Chess          Chess   Chess   Chess
+     d40.png l40.png d40.png l40.png kld40.png      l40.png d40.png rll40.png
+     α       β       γ       δ       ε              ζ       η       θ
+
+   8 Chess l40.png  Chess   Chess   Chess   Chess     Chess   Chess   Chess
+                    d40.png l40.png d40.png l40.png   d40.png l40.png d40.png
+   7 Chess d40.png  Chess   Chess   Chess   Chess     Chess   Chess   Chess
+                    l40.png d40.png l40.png d40.png   l40.png d40.png l40.png
+   6 Chess l40.png  Chess   Chess   Chess   Chess     Chess   Chess   Chess
+                    d40.png l40.png d40.png l40.png   d40.png l40.png d40.png
+   5 Chess d40.png  Chess   Chess   Chess   Chess     Chess   Chess   Chess
+                    l40.png d40.png l40.png d40.png   l40.png d40.png l40.png
+   4 Chess l40.png  Chess   Chess   Chess   Chess     Chess   Chess   Chess
+                    d40.png l40.png d40.png l40.png   d40.png l40.png d40.png
+   3 Chess d40.png  Chess   Chess   Chess   Chess     Chess   Chess   Chess
+                    l40.png d40.png l40.png d40.png   l40.png d40.png l40.png
+   2 Chess l40.png  Chess   Chess   Chess   Chess     Chess   Chess   Chess
+                    d40.png l40.png d40.png l40.png   d40.png l40.png d40.png
+   1 Chess          Chess   Chess   Chess   Chess     Chess   Chess   Chess
+     rld40.png      l40.png d40.png l40.png kld40.png l40.png d40.png l40.png
+     α              β       γ       δ       ε         ζ       η       θ
+
+   Υπάρχουν δυο είδη ροκέ. Το μικρό ροκέ που γίνεται με τον πύργο του βασιλιά
+   και το μεγάλο ροκέ που γίνεται με τον πύργο της βασίλισσας. Το μικρό ροκέ
+   συμβολίζεται γενικά Ο-Ο και το μεγάλο συμβολίζεται Ο-Ο-Ο. Στα διαγράμματα
+   αριστερά παρουσιάζεται το μικρο ροκέ και δεξιά το μεγάλο ροκέ.
+
+   Το ροκέ αποσκοπεί στην καλύτερη προστασία του βασιλιά στο μέσον της
+   παρτίδας και στην καλύτερη αξιοποίηση των πύργων. Γενικά είναι πολύ
+   σημαντική κίνηση και οι παίκτες το κάνουν το συντομότερο δυνατό.
+
+   Το μικρό ροκέ είναι περισσότερο συνηθισμένο γιατί γενικά είναι ταχύτερο
+   αφού απαιτεί λιγότερα κομμάτια να απομακρυνθούν από τις θέσεις τους αλλά
+   επίσης θεωρείται και κάπως ασφαλέστερο για τον βασιλιά. Τα πιόνια μπροστά
+   από τον βασιλιά αποφεύγεται να κινηθούν γιατί κάτι τέτοιο γενικά
+   αδυνατίζει την άμυνα του βασιλιά. Μεγάλο ενδιαφέρον παρουσιάζει η
+   περίπτωση που οι παίκτες κάνουν αντίθετα ροκέ. Τα απέναντι πιόνια είναι
+   ελεύθερα να κινηθούν επιθετικά και η παρτίδα οδηγείται σε αγώνα δρόμου
+   επίθεσης στους βασιλιάδες των δυο παικτών.
+
+   8 Chess   Chess   Chess   Chess   Chess   Chess d40.png  Chess     Chess
+     l40.png d40.png l40.png d40.png l40.png                l40.png   d40.png
+   7 Chess   Chess   Chess   Chess   Chess   Chess l40.png  Chess     Chess
+     d40.png l40.png d40.png l40.png d40.png                d40.png   l40.png
+   6 Chess   Chess   Chess   Chess   Chess   Chess d40.png  Chess     Chess
+     l40.png d40.png l40.png d40.png l40.png                l40.png   d40.png
+   5 Chess   Chess   Chess   Chess   Chess   Chess l40.png  Chess     Chess
+     d40.png l40.png d40.png l40.png d40.png                d40.png   l40.png
+   4 Chess   Chess   Chess   Chess   Chess   Chess d40.png  Chess     Chess
+     l40.png d40.png l40.png d40.png l40.png                l40.png   d40.png
+   3 Chess   Chess   Chess   Chess   Chess   Chess l40.png  Chess     Chess
+     d40.png l40.png d40.png l40.png d40.png                d40.png   l40.png
+   2 Chess   Chess   Chess   Chess   Chess   Chess d40.png  Chess     Chess
+     l40.png d40.png l40.png d40.png l40.png                l40.png   d40.png
+   1 Chess   Chess   Chess   Chess   Chess   Chess          Chess     Chess
+     d40.png l40.png d40.png l40.png d40.png rll40.png      kld40.png l40.png
+     α       β       γ       δ       ε       ζ              η         θ
+
+   8 Chess   Chess   Chess l40.png  Chess     Chess   Chess   Chess   Chess
+     l40.png d40.png                d40.png   l40.png d40.png l40.png d40.png
+   7 Chess   Chess   Chess d40.png  Chess     Chess   Chess   Chess   Chess
+     d40.png l40.png                l40.png   d40.png l40.png d40.png l40.png
+   6 Chess   Chess   Chess l40.png  Chess     Chess   Chess   Chess   Chess
+     l40.png d40.png                d40.png   l40.png d40.png l40.png d40.png
+   5 Chess   Chess   Chess d40.png  Chess     Chess   Chess   Chess   Chess
+     d40.png l40.png                l40.png   d40.png l40.png d40.png l40.png
+   4 Chess   Chess   Chess l40.png  Chess     Chess   Chess   Chess   Chess
+     l40.png d40.png                d40.png   l40.png d40.png l40.png d40.png
+   3 Chess   Chess   Chess d40.png  Chess     Chess   Chess   Chess   Chess
+     d40.png l40.png                l40.png   d40.png l40.png d40.png l40.png
+   2 Chess   Chess   Chess l40.png  Chess     Chess   Chess   Chess   Chess
+     l40.png d40.png                d40.png   l40.png d40.png l40.png d40.png
+   1 Chess   Chess   Chess          Chess     Chess   Chess   Chess   Chess
+     d40.png l40.png kld40.png      rll40.png d40.png l40.png d40.png l40.png
+     α       β       γ              δ         ε       ζ       η       θ
+
+   Ανακτήθηκε από "http://el.wikipedia.org/wiki/%CE%A1%CE%BF%CE%BA%CE%AD"
+   Κατηγορία: Σκάκι
+
+      Προσωπικά εργαλεία
+
+     • Νέα χαρακτηριστικά
+     • Δημιουργία Λογαριασμού/Είσοδος
+
+      Περιοχές ονομάτων
+
+     • Άρθρο
+     • Συζήτηση
+
+      Παραλλαγές
+
+      Εμφανίσεις
+
+     • Ανάγνωση
+     • Επεξεργασία
+     • Προβολή ιστορικού
+
+      Ενέργειες
+
+      Αναζήτηση
+
+   _____________________ Αναζήτηση
+
+      Πλοήγηση
+
+     • Κύρια πύλη
+     • Κατάλογος άρθρων
+     • Αξιόλογα άρθρα
+     • Τρέχοντα γεγονότα
+     • Τυχαία σελίδα
+
+      Συμμετοχή
+
+     • Πύλη Κοινότητας
+     • Αγορά
+     • Πρόσφατες αλλαγές
+     • Βοήθεια
+     • Επικοινωνία
+     • Δωρεές
+
+      Εκτύπωση/εξαγωγή
+
+     • Δημιουργία βιβλίου
+     • Κατέβασμα ως PDF
+     • Έκδοση εκτύπωσης
+
+      Εργαλειοθήκη
+
+     • Συνδέσεις προς εδώ
+     • Σχετικές αλλαγές
+     • Ειδικές σελίδες
+     • Σταθερός σύνδεσμος
+     • Παραπομπή
+
+      Άλλες γλώσσες
+
+     • العربية
+     • Беларуская (тарашкевіца)
+     • Български
+     • Català
+     • Česky
+     • Cymraeg
+     • Dansk
+     • Deutsch
+     • English
+     • Esperanto
+     • Español
+     • Eesti
+     • Føroyskt
+     • Français
+     • Galego
+     • עברית
+     • Hrvatski
+     • Magyar
+     • Bahasa Indonesia
+     • Italiano
+     • 日本語
+     • 한국어
+     • Latina
+     • Lietuvių
+     • Plattdüütsch
+     • Nederlands
+     • ‪Norsk (nynorsk)‬
+     • ‪Norsk (bokmål)‬
+     • Polski
+     • Português
+     • Română
+     • Русский
+     • Srpskohrvatski / Српскохрватски
+     • Simple English
+     • Slovenčina
+     • Slovenščina
+     • Српски / Srpski
+     • Svenska
+     • Türkçe
+     • Українська
+     • Tiếng Việt
+     • 中文
+
+     • Τελευταία τροποποίηση 18:48, 14 Απριλίου 2010.
+     • Όλα τα κείμενα είναι διαθέσιμα υπό την Creative Commons
+       Attribution/Share-Alike License· μπορεί να ισχύουν και πρόσθετοι όροι.
+       Δείτε τους Όρους Χρήσης για λεπτομέρειες.
+
+     • Πολιτική προσωπικών δεδομένων
+     • Για τη Βικιπαίδεια
+     • Αποποίηση ευθυνών
+
+     • Powered by MediaWiki
+     • Wikimedia Foundation

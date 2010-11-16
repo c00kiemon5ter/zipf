@@ -1,0 +1,296 @@
+   Link: Επεξεργασία (alternate)
+   Link: Επεξεργασία (edit)
+   Link: Βικιπαίδεια (el) (search)
+   Link: copyright
+   Link: Βικιπαίδεια Atom Συνδρομή (alternate)
+
+                Ρομποτική ανοιχτού κώδικα
+
+   Από τη Βικιπαίδεια, την ελεύθερη
+   εγκυκλοπαίδεια
+   Μετάβαση σε: πλοήγηση, αναζήτηση
+
+                     Αυτό το άρθρο είναι ορφανό
+                     καθώς λίγα ή και καθόλου άρθρα
+                     συνδέουν σε αυτό.
+   Wiki letter w.svg
+                     Παρακαλούμε βοηθήστε βάζοντας
+                     συνδέσμους προς αυτό σε άρθρα
+                     για σχετικά θέματα. (Απριλίου
+                     2010)
+
+                   Αυτό το άρθρο χρειάζεται
+                   μετάφραση.
+
+                   Αν θέλετε να συμμετάσχετε,
+                   μπορείτε να επεξεργαστείτε το
+                   άρθρο μεταφράζοντάς το ή
+   Icono de        προσθέτοντας δικό σας υλικό και
+   traducción.svg να αφαιρέσετε το {{μετάφραση}}
+                   μόλις το ολοκληρώσετε. Είναι
+                   πιθανό (και επιθυμητό) το
+                   ξενόγλωσσο κείμενο να έχει
+                   κρυφτεί σαν σχόλιο με τα <!-- και
+                   -->. Πατήστε "επεξεργασία" για να
+                   δείτε ολόκληρο το κείμενο.
+
+   Ένα ρομπότ ανοιχτού κώδικα είναι ένα
+   ρομπότ του οποίου τα σχέδια, σχηματικές
+   ή πηγαίος κώδικας δίνονται δημόσια με το
+   μοντέλο του λογισμικού ανοιχτού κώδικα.
+
+   Πίνακας περιεχομένων
+
+     * 1 Έργα
+     * 2 Προτερήματα
+     * 3 Δημοσιότητα
+     * 4 Χρήσεις
+     * 5 Δείτε επίσης
+     * 6 Παραπομπές
+     * 7 Εξωτερικοί σύνδεσμοι
+
+[Επεξεργασία] Έργα
+
+   Ρομπότ φορητής τηλεπαρουσίας:
+
+     * Sparky Jr., Ερευνητικό έργο φορητής
+       τηλεπαρουσίας, γύρω στο 1994
+
+   Πλήρη ρομποτικά έργα:
+
+     * Willow Garage Πρωσοπικό Βοηθητικό Ρομπότ ^[1]
+     * Open Automaton Project (oap.sourceforge.net)
+     * Leaf Project (www.leafproject.org/)
+     * RobotCub
+     * OpenRAVE
+       (http://openrave.programmingvision.com/index.php?title=Main_Page)
+     * The Humanoid Project (http://humanoid.fy.chalmers.se/)
+     * e-puck mobile robot, an open-hardware, education oriented, mobile
+       robot.
+     * Open-source Micro-robotic Project, ένα έργο για
+       ομαδικά ρομπότ ανοιχτού κώδικα
+     * Qwerkbot, απλό ρομπότ ανοιχτού κώδικα από
+       το Πανεπιστήμιο Καρνέτζιε Μέλον
+     * Roboware E3 ^[2]
+
+   Λογισμικό ανοιχτού κώδικα για ρομπότ:
+
+     * ROS (Robot Operating System) (λειτουργικό για το
+       ρομπότ Willow Garage)
+     * Player (βιβλιοθήκες για ρομπότ)
+     * Orocos, βιβλιοθήκες C++ framework για έλεγχο
+       ρομπότ
+     * Orca (ρομποβιβλιοθήκες)
+     * MOOS (ρομποβιβλιοθήκες)
+     * RoboComp (βιβλιοθήκες)
+     * RUBICS
+     * CARMEN (εξομοιωτής ρομπότ)
+     * TeamBots (ρομποεξωμοιωτής)
+     * Open Dynamics Engine (μηχανή φυσικής για
+       μοντελοποίηση αρτικουλατισμένων
+       δυναμικών πηχτού σώματος)
+     * Simbad (εξομοιωτής)
+     * Gazebo (εξομοιωτής πολλαπλών ρομπότ)
+     * Ρομποτικό Λειτουργικό Σύστημα Dave
+     * Ελεγκτής Τηλεπαρουσίας Sparky
+     * Λογισμικό για το Spykee
+     * OpenJAUS (βιβλιοθήκη για ρομπότ και
+       συστήματα δίχως ανθρώπινο οδηγό)
+
+   Υλικό ανοιχτού κώδικα:
+
+     * Make Controller Kit
+     * μητρικές πλακέτες με
+       μικροεπεξεργαστή Arduino
+     * The Rossum project ρομποβιβλιοθήκες και
+       εργαλεία, μερικά των οποίων είναι
+       ανοιχτού κώδικα (χαρτογραφητές,
+       ρομποεξομοιωτές, σχεδιαστές
+       κωδικοποίησης, ...)
+
+[Επεξεργασία] Προτερήματα
+
+     * Χαμηλό κόστος. Το κόστος ενός ρομπότ
+       ανοιχτού κώδικα μπορεί να είναι πολύ
+       χαμηλό. Παραδείγματα τα ρομπότ του Hanson
+       (300$) και του έργου aiko (25000$)
+     * Λογισμικό ή υλικό που μπορεί να
+       αλλάζει εύκολα και είναι συμβατό με
+       πολλά ρομπότ
+
+[Επεξεργασία] Δημοσιότητα
+
+   Το πρώτο σημάδι για την αυξανόμενη
+   δημοσιότητα των ρομπότ που μπορούν να
+   κατασκευαστούν με ανοιχτό κώδικα
+   εμφανίστηκε στη κοινότητα κάντο μόνος
+   σου. Άρχισε με μικρές ομάδες που έπαιζαν
+   ανταγωνιστικά με ασύρματα οχήματα (πχ το
+   RobotWars), και τελικά αναπτύχθηκε σε χτίσιμο
+   ρομπότ με αυτόνομη τηλεπαρουσία όπως πχ
+   το Sparky και μετά πραγματικά ολοκληρωμένα
+   ρομπότ (που μπορούν να πάρουν αποφάσεις
+   μόνα τους) όπως πχ το Έργο Ανοιχτού
+   Αυττόματου (Open Automaton Project) και το Έργο
+   Φύλλο (Leaf Project). Ορισμένες εμπορικές
+   επιχειρήσεις σήμερα φτιάχνουν πακέτα
+   για απλά ρομπότ που κατασκευάζονται στο
+   σπίτι. Ένα παράδειγμα είναι ηDeAgostini.
+
+[Επεξεργασία] Χρήσεις
+
+   Πρότυπο:Mergeto
+
+   Σήμερα τα ρομπότ ανοιχτού κώδικα δεν
+   είναι τόσο ανεπτυγμένα ώστε να κάνουν
+   ό,τι κάνει και ένας άνθρωπος, ούτε και
+   πολύ δύσκολες εργασίες που όμως κάποια
+   μέρα μόνο ένα ρομπότ θα μπορούσε να
+   κάνει, όπως:
+
+     * εργασία με μέταλλα (precise metal sheets and
+       pipe-bending, sheet/pipe cutting; eg via Multimachine and/or other
+       embedded tools as cramps, pliers, ...)
+     * πολυγλωσσικές μεταφράσεις (including the main
+       languages as Mandarin, Arabic, Spanish, Portuguese, ...)
+     * μετρήσεις θερμίδων για τον χρήστη του
+       ρομπότ. counting the calories of food items the owner eats and
+       preventing him from eating more that day when he reaches 2000kcal
+     * κατασκευή ηλεκτρονικών κυκλωμάτων
+       (PCB-boards)
+     * μετακινήσεις. this eg by riding on the back, similar as on
+       a horse (the latter allowing the robot to return to the appearance of
+       a normal person after disembarking)
+     * πρωσοπική προστασία (robots, being made of metal,
+       are able to withstand quite some beating and may be learned to
+       incapacitate attackers by punching or Less-lethal weapons ^[3])
+     * αναχαίτηση βομβών and/or making of explosive compounds
+       for bomb disposal (eg on the owner's farming fields eg in developing
+       countries as Cambodia, countries south and north of the sahara as
+       Angola, Western Sahara, Libia, ..) or destruction of obstacles or to
+       prepare building sites
+     * διευκολύνσεις στην επικοινωνία (through a
+       small computer (eg Linutop, EeeBox, gPC, and integrated satellite
+       internet uplink or long-range Wifi or WiMax-antenna). The type of
+       communication may include: active searching on webpages (browsing),
+       e-mail, text and or audio based communication with others (eg VoIP
+       calls; both to distant users via internet as local VoIP-communication
+       to team members in close proximity), ...
+
+   Παρόλα αυτά ωστόσο, μερικοί χομπίστες
+   ήδη κάνουν τα ρομπότ τους να κάνουν
+   χρήσιμες εργασίες όπως το Roomba που
+   λειτουργεί ως χειριστής ηλεκτρικής
+   σκούπας, το Scooba που καθαρίζει το πάτωμα
+   και άλλα ρομπότ που αυτοματοποιούν το
+   mowing.^[4]^[5]
+
+[Επεξεργασία] Δείτε επίσης
+
+     * Scott Hassan (founder of Willow Garage and senior Google board member)
+     * STAIRS
+     * Softbot
+     * Khepera III
+     * Robotics suite
+
+[Επεξεργασία] Παραπομπές
+
+    1. ↑ Willow Garage RPA
+    2. ↑ Roboware E3
+    3. ↑ Tmsuk security robots
+    4. ↑ DIY commercial vacuum robot
+    5. ↑ DIY Roomba preposition on Arduino motherboard
+
+[Επεξεργασία] Εξωτερικοί σύνδεσμοι
+
+     * Open Source Robot toolkit
+     * DIY Linux robots
+     * Carnegie Mellon DIY Robots
+     * DIY Mobile Telepresence
+
+                      Στο άρθρο αυτό έχει
+                      ενσωματωθεί κείμενο από το
+                      άρθρο Open-source robotics της
+   Wikipedia-logo.png Αγγλόγλωσσης Βικιπαίδειας, η
+                      οποία διανέμεται υπό την GNU FDL
+                      και την CC-BY-SA 3.0.
+                      (ιστορικό/συντάκτες).
+
+   Ανακτήθηκε από
+   "http://el.wikipedia.org/wiki/%CE%A1%CE%BF%CE%BC%CF%80%CE%BF%CF%84%CE%B9%CE%BA%CE%AE_%CE%B1%CE%BD%CE%BF%CE%B9%CF%87%CF%84%CE%BF%CF%8D_%CE%BA%CF%8E%CE%B4%CE%B9%CE%BA%CE%B1"
+   Κατηγορία: Ρομποτική
+   Κρυμμένες κατηγορίες: Ορφανά άρθρα
+   Απριλίου 2010 | Άρθρα προς μετάφραση
+
+      Προσωπικά εργαλεία
+
+     * Νέα χαρακτηριστικά
+     * Δημιουργία Λογαριασμού/Είσοδος
+
+      Περιοχές ονομάτων
+
+     * Άρθρο
+     * Συζήτηση
+
+      Παραλλαγές
+
+      Εμφανίσεις
+
+     * Ανάγνωση
+     * Επεξεργασία
+     * Προβολή ιστορικού
+
+      Ενέργειες
+
+      Αναζήτηση
+
+   _____________________ Αναζήτηση
+
+      Πλοήγηση
+
+     * Κύρια πύλη
+     * Κατάλογος άρθρων
+     * Αξιόλογα άρθρα
+     * Τρέχοντα γεγονότα
+     * Τυχαία σελίδα
+
+      Συμμετοχή
+
+     * Πύλη Κοινότητας
+     * Αγορά
+     * Πρόσφατες αλλαγές
+     * Βοήθεια
+     * Επικοινωνία
+     * Δωρεές
+
+      Εκτύπωση/εξαγωγή
+
+     * Δημιουργία βιβλίου
+     * Κατέβασμα ως PDF
+     * Έκδοση εκτύπωσης
+
+      Εργαλειοθήκη
+
+     * Συνδέσεις προς εδώ
+     * Σχετικές αλλαγές
+     * Ειδικές σελίδες
+     * Σταθερός σύνδεσμος
+     * Παραπομπή
+
+      Άλλες γλώσσες
+
+     * English
+
+     * Τελευταία τροποποίηση 16:05, 15 Απριλίου
+       2010.
+     * Όλα τα κείμενα είναι διαθέσιμα υπό την
+       Creative Commons Attribution/Share-Alike License· μπορεί να
+       ισχύουν και πρόσθετοι όροι. Δείτε τους
+       Όρους Χρήσης για λεπτομέρειες.
+
+     * Πολιτική προσωπικών δεδομένων
+     * Για τη Βικιπαίδεια
+     * Αποποίηση ευθυνών
+
+     * Powered by MediaWiki
+     * Wikimedia Foundation

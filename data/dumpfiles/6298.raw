@@ -1,0 +1,225 @@
+   Link: Επεξεργασία (alternate)
+   Link: Επεξεργασία (edit)
+   Link: Βικιπαίδεια (el) (search)
+   Link: copyright
+   Link: Βικιπαίδεια Atom Συνδρομή (alternate)
+
+                                      Πατ
+
+   Από τη Βικιπαίδεια, την ελεύθερη εγκυκλοπαίδεια
+   Μετάβαση σε: πλοήγηση, αναζήτηση
+
+   Το πατ είναι σκακιστικός όρος που αναφέρεται σε ένα συγκεκριμένο είδος
+   ισοπαλίας.
+
+   8 Chess    Chess    Chess    Chess    Chess      Chess    Chess    Chess
+     l40.png  d40.png  l40.png  d40.png  kdl40.png  d40.png  l40.png  d40.png
+   7 Chess    Chess    Chess    Chess    Chess      Chess    Chess    Chess
+     d40.png  l40.png  d40.png  l40.png  pld40.png  l40.png  d40.png  l40.png
+   6 Chess    Chess    Chess    Chess    Chess      Chess    Chess    Chess
+     l40.png  d40.png  l40.png  d40.png  kll40.png  d40.png  l40.png  d40.png
+   5 Chess    Chess    Chess    Chess    Chess      Chess    Chess    Chess
+     d40.png  l40.png  d40.png  l40.png  d40.png    l40.png  d40.png  l40.png
+   4 Chess    Chess    Chess    Chess    Chess      Chess    Chess    Chess
+     l40.png  d40.png  l40.png  d40.png  l40.png    d40.png  l40.png  d40.png
+   3 Chess    Chess    Chess    Chess    Chess      Chess    Chess    Chess
+     d40.png  l40.png  d40.png  l40.png  d40.png    l40.png  d40.png  l40.png
+   2 Chess    Chess    Chess    Chess    Chess      Chess    Chess    Chess
+     l40.png  d40.png  l40.png  d40.png  l40.png    d40.png  l40.png  d40.png
+   1 Chess    Chess    Chess    Chess    Chess      Chess    Chess    Chess
+     d40.png  l40.png  d40.png  l40.png  d40.png    l40.png  d40.png  l40.png
+     α        β        γ        δ        ε          ζ        η        θ
+
+   Πρόκειται για την περίπτωση που ο παίκτης που έχει την κίνηση δεν διαθέτει
+   καμμία νόμιμη κίνηση αλλά ο βασιλιάς του δεν απειλείται. Διαφέρει έτσι από
+   το ματ. Στο διάγραμμα αριστερά ο μαύρος βασιλιάς είναι πατ. Ενώ στο ματ ο
+   αγώνας λήγει αμέσως με νίκη του παίκτη που το πετυχαίνει, στο πατ η
+   παρτίδα λήγει αμέσως με ισοπαλία.
+
+   8 Chess   Chess      Chess     Chess   Chess   Chess     Chess     Chess
+     l40.png d40.png    l40.png   d40.png l40.png d40.png   l40.png   d40.png
+   7 Chess   Chess      Chess     Chess   Chess   Chess     Chess     Chess
+     d40.png l40.png    d40.png   l40.png d40.png l40.png   d40.png   l40.png
+   6 Chess   Chess      Chess     Chess   Chess   Chess     Chess     Chess
+     l40.png d40.png    l40.png   d40.png l40.png d40.png   kll40.png d40.png
+   5 Chess   Chess      Chess     Chess   Chess   Chess     Chess     Chess
+     d40.png l40.png    d40.png   l40.png d40.png l40.png   d40.png   l40.png
+   4 Chess   Chess      Chess     Chess   Chess   Chess     Chess     Chess
+     l40.png d40.png    l40.png   d40.png l40.png d40.png   l40.png   d40.png
+   3 Chess   Chess      Chess     Chess   Chess   Chess     Chess     Chess
+     d40.png l40.png    d40.png   l40.png d40.png qll40.png d40.png   l40.png
+   2 Chess   Chess      Chess     Chess   Chess   Chess     Chess     Chess
+     l40.png d40.png    pdl40.png d40.png l40.png d40.png   l40.png   d40.png
+   1 Chess   Chess      Chess     Chess   Chess   Chess     Chess     Chess
+     d40.png kdl40.png  d40.png   l40.png d40.png l40.png   d40.png   l40.png
+     α       β          γ         δ       ε       ζ         η         θ
+
+   Στο φινάλε το πατ είναι ένας σχετικά σημαντικός παράγοντας, καθώς σώζει
+   συχνά παίκτες από φαινομενικά χαμένες θέσεις. Στην θέση δεξιά έχουμε
+   θεωρητική ισοπαλία. Μετά από Ββ3+ ο μαύρος ήρεμα παίζει Ρα1!. Τώρα το
+   κόψιμο του πιονιού προκαλεί πατ.
+
+   Οι αρχάριοι πρέπει να προσέχουν το πατ ειδικά στο τέλος του παιχνιδιού
+   όταν προσπαθούν να στριμώξουν με την βασίλισσα τους τον αντίπαλο βασιλιά.
+   Το να δίνουν συνεχώς σαχ δεν ωφελεί, αλλά υπερβολική βιασύνη μπορεί να
+   προκαλέσει πατ και να χάσουν έτσι μια εξώφθαλμη νίκη.
+
+8 Chess     Chess     Chess     Chess     Chess     Chess     Chess     Chess
+  l40.png   d40.png   qdl40.png rdd40.png l40.png   d40.png   l40.png   d40.png
+7 Chess     Chess     Chess     Chess     Chess     Chess     Chess     Chess
+  d40.png   l40.png   d40.png   l40.png   rld40.png l40.png   pdd40.png kdl40.png
+6 Chess     Chess     Chess     Chess     Chess     Chess     Chess     Chess
+  pdl40.png qld40.png l40.png   d40.png   l40.png   pdd40.png l40.png   pdd40.png
+5 Chess     Chess     Chess     Chess     Chess     Chess     Chess     Chess
+  pld40.png l40.png   d40.png   l40.png   d40.png   pll40.png d40.png   pll40.png
+4 Chess     Chess     Chess     Chess     Chess     Chess     Chess     Chess
+  l40.png   d40.png   l40.png   pld40.png l40.png   d40.png   pll40.png d40.png
+3 Chess     Chess     Chess     Chess     Chess     Chess     Chess     Chess
+  d40.png   l40.png   d40.png   l40.png   d40.png   pll40.png d40.png   kll40.png
+2 Chess     Chess     Chess     Chess     Chess     Chess     Chess     Chess
+  l40.png   d40.png   l40.png   d40.png   l40.png   d40.png   l40.png   d40.png
+1 Chess     Chess     Chess     Chess     Chess     Chess     Chess     Chess
+  d40.png   l40.png   d40.png   l40.png   d40.png   l40.png   d40.png   l40.png
+  α         β         γ         δ         ε         ζ         η         θ
+
+   Το πατ μπορεί να προκύψει και σε θέσεις με περισσότερα κομμάτια. Η θέση
+   αριστερά προέκυψε σε ένα παιχνίδι για την διεκδικηση του παγκόσμιου
+   πρωταθλήματος μεταξύ Γκέλφαντ(λευκά) και Κράμνικ(μαύρα). Ο μαύρος κατάφερε
+   να αποσπάσει την ισοπαλία παρόλο που φαίνεται σε πολύ χειρότερη θέση.
+   Έπαιξε 67...Βγ1! και τώρα αν τα λευκά κόψουν τον απροστάτευτο πύργο έχουμε
+   68.Β:δ8 Βθ1+ 69.Ρη3 Β:ζ3 70.Ρθ4 (70.Ρ:ζ3 είναι πατ) Β:η4+ εξαναγκάζοντας
+   τα λευκά να κόψουν την βασίλισσα και να προκαλέσουν πατ.
+
+   Το πατ είναι πολύ συνηθισμένη ιδέα πίσω από καλλιτεχνικά φινάλε.
+
+   Έχουν γίνει προσπάθειες να κατασκευαστεί το συντομότερο δυνατό πατ. Ο Σαμ
+   Λόιντ επινόησε ένα παιχνίδι που λήγει με πατ σε μόνο δέκα κινήσεις! (1.ε3
+   α5 2.Βθ5 Πα6 3.Β:α5 θ5 4.Β:γ7 Παθ6 5.θ4 ζ6 6.Β:δ7+ Ρζ7 7.Β:β7 Βδ3 8.Β:β8
+   Βθ7 9.Β:γ8 Ρη6 10.Βε6). Μια άλλη κατασκευή του Λόϋντ παρουσιάζει ένα πατ
+   με όλα τα κομμάτια στην σκακιέρα! (1.δ4 δ6 2.Βδ2 ε5 3.α4 ε4 4.Βζ4 ζ5 5.θ3
+   Αε7 6.Βθ2 Αε6 7.Πα3 γ5 8.Πη3 Βα5+ 9.Ιδ2 Αθ4 10.ζ3 Αβ3 11.δ5 ε3 12.γ4 ζ4).
+
+   Το πατ έχει κάπως μπερδεμένη ιστορία. Στους πρόδρομους του σκακιού ήταν
+   νίκη για την πλευρά που το έκανε. Αν και αυτός ο κανόνας ίσχυε για ένα
+   διάστημα και στο σκάκι συχνά η νίκη με πατ απέδιδε μόνο τα μισά χρήματα
+   στις περιπτώσεις στοιχημάτων. Σύμφωνα με το A History of Chess του H. J.
+   R. Murray, για ένα διάστημα στην Αγγλία ο κανόνας ήταν ήττα για αυτόν που
+   το έκανε. Μόνο τον 19ο αιώνα ο σύγχρονος κανόνας της ισοπαλίας
+   καθιερώθηκε.
+
+   Στις διάφορες εποχές το πατ σήμαινε για την πλευρά που το πετύχαινε (ο
+   αντίπαλος δεν έχει κίνηση να παίξει):
+
+     • νίκη. Αραβία 10ος αιώνας
+     • μισή νίκη. 18ος αιώνας Ισπανία
+     • ήττα. Ρωσσία 17ος αιώνας και Αγγλία 19ος αιώνας
+     • ανεπίτρεπτο. (μια διαφορετική κίνηση είναι υποχρεωτικό να παικτεί) Άπω
+       Ανατολή ώς τον 20ο αιώνα.
+     • ο αντίπαλος χάνει την σειρά του. Μεσαιωνική Γαλλία
+     • ισοπαλία. Ιταλία 14ος αιώνας και διάδοση σε όλη την ευρώπη
+
+   Η κατάργηση του κανόνα του πατ θα προσέδιδε μεγαλύτερη έμφαση στο υλικό
+   πάνω στην σκακιέρα. Για παράδειγμα, ο βασιλιάς με πιόνι εναντίον βασιλιά
+   θα κέρδιζε πάντα με μόνη ελπίδα για τον αμυνόμενο βασιλιά να κόψει το
+   πιόνι.
+
+   Ανακτήθηκε από "http://el.wikipedia.org/wiki/%CE%A0%CE%B1%CF%84"
+   Κατηγορία: Σκάκι
+
+      Προσωπικά εργαλεία
+
+     • Νέα χαρακτηριστικά
+     • Δημιουργία Λογαριασμού/Είσοδος
+
+      Περιοχές ονομάτων
+
+     • Άρθρο
+     • Συζήτηση
+
+      Παραλλαγές
+
+      Εμφανίσεις
+
+     • Ανάγνωση
+     • Επεξεργασία
+     • Προβολή ιστορικού
+
+      Ενέργειες
+
+      Αναζήτηση
+
+   _____________________ Αναζήτηση
+
+      Πλοήγηση
+
+     • Κύρια πύλη
+     • Κατάλογος άρθρων
+     • Αξιόλογα άρθρα
+     • Τρέχοντα γεγονότα
+     • Τυχαία σελίδα
+
+      Συμμετοχή
+
+     • Πύλη Κοινότητας
+     • Αγορά
+     • Πρόσφατες αλλαγές
+     • Βοήθεια
+     • Επικοινωνία
+     • Δωρεές
+
+      Εκτύπωση/εξαγωγή
+
+     • Δημιουργία βιβλίου
+     • Κατέβασμα ως PDF
+     • Έκδοση εκτύπωσης
+
+      Εργαλειοθήκη
+
+     • Συνδέσεις προς εδώ
+     • Σχετικές αλλαγές
+     • Ειδικές σελίδες
+     • Σταθερός σύνδεσμος
+     • Παραπομπή
+
+      Άλλες γλώσσες
+
+     • Azərbaycanca
+     • Български
+     • Català
+     • Česky
+     • Dansk
+     • Deutsch
+     • English
+     • Español
+     • Eesti
+     • Suomi
+     • Føroyskt
+     • Français
+     • עברית
+     • Ido
+     • Italiano
+     • 日本語
+     • Lietuvių
+     • Nederlands
+     • ‪Norsk (bokmål)‬
+     • Polski
+     • Português
+     • Русский
+     • Slovenčina
+     • Slovenščina
+     • Svenska
+     • Türkçe
+     • Українська
+     • Tiếng Việt
+
+     • Τελευταία τροποποίηση 02:16, 14 Νοεμβρίου 2010.
+     • Όλα τα κείμενα είναι διαθέσιμα υπό την Creative Commons
+       Attribution/Share-Alike License· μπορεί να ισχύουν και πρόσθετοι όροι.
+       Δείτε τους Όρους Χρήσης για λεπτομέρειες.
+
+     • Πολιτική προσωπικών δεδομένων
+     • Για τη Βικιπαίδεια
+     • Αποποίηση ευθυνών
+
+     • Powered by MediaWiki
+     • Wikimedia Foundation
