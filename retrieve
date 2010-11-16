@@ -67,7 +67,7 @@ calcb() {
 	[ ! -e "$mapfile" ] && echo "cannot read data. try mapping first" && exit 1
 
 	local bval=0 bw=0 nwords=$(wc -l < "$mapfile")
-	echo "Rank\tFrequency\tPn-Frequency\tb-value\tWord" > "$bvalfile"
+	echo -e "Rank\tFrequency\tPn-Frequency\tb-value\t\tWord" > "$bvalfile"
 
 	while read rank freq word
 	do
