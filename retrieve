@@ -32,7 +32,7 @@ tokenize() {
 	(( ! ${#files[*]} )) && echo "no data to process. try fetch first" && exit 1
 	shopt -u nullglob dotglob
 
-	for rawfile in *.raw
+	for rawfile in "${files[@]}"
 	do
 		local tokfile="$tokenpath/${rawfile/raw/tok}"
 		sed -r "/.*(\s+Link|IMG|\s+\*|\s+_|^\[|^$).*/d" "$rawfile" > "$tokfile"
@@ -53,7 +53,7 @@ sortmap() {
 	(( ! ${#files[*]} )) && echo "cannot read data. try tokenize first" && exit 1
 	shopt -u nullglob dotglob
 
-	sort *.tok | uniq -ci | sort -nr | pr -n -t > "$mapfile"
+	sort "${files[@]}" | uniq -ci | sort -nr | pr -n -t > "$mapfile"
 
 	echo "Mapping complete"
 }
