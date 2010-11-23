@@ -1,482 +1,165 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+                   GNU LESSER GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
 
-<head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<link rev="made" href="mailto:webmasters@gnu.org" />
-<link rel="icon" type="image/png" href="/graphics/gnu-head-mini.png" />
-<meta name="ICBM" content="42.256233,-71.006581" />
-<meta name="DC.title" content="gnu.org" />
+ Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
 
 
-<title>How to use GNU licenses for your own software - GNU Project - Free Software Foundation (FSF)</title>
+  This version of the GNU Lesser General Public License incorporates
+the terms and conditions of version 3 of the GNU General Public
+License, supplemented by the additional permissions listed below.
 
-<!-- start of banner.html -->
-<!-- start of head-include-2.html -->
-
-<style type="text/css" media="screen">
-@import url('/style.css');
-</style>
-
-<style type="text/css" media="handheld">
-@import url('/mini.css');
-</style>
-
-<!--[if IE]>
-<link rel="stylesheet" href="/style.css" media="screen" type="text/css" />
-<![endif]-->
-
-<style type="text/css" media="print">
-@import url('/print.css');
-</style>
-<meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
-<!-- end of head-include-2.html -->
-
-</head>
-<body>
-<div id="toplinks"><span class="netscape4"><a href="#content">Skip to content</a> | <a href="#navigation">Skip to navigation</a> | <a href="#searcher">Skip to search</a>| </span><a href="#translations">Translations of this page</a> | <a href="/accessibility/">Accessibility</a></div>
-
-
-<div id="null-wrapper">
-
-      <div id="header">
-        <div class="inner" style="position: relative;">
-
-        <h1 id="logo"><a href="/">The GNU Operating System</a></h1>
-
-	  	<div id="fssbox">
-	  <h4>Sign up for the <em>Free Software Supporter</em></h4>
-	  <p>A monthly update on GNU and the FSF</p>
-	  <form action="http://lists.fsf.org/mailman/subscribe/info-fsf" method="post">
-	  <p><input type="text" id="frmEmail" name="email" size="15" maxlength="80" value="you@example.com" onfocus="this.value=''" /> &nbsp; <input type="submit" value="Ok" /></p>
-	  </form>
-	</div>
-
-
-	
-	</div>
-
-      </div>
-
-      <div id="navigation">
-        <div class="inner">
-        <ul>
-          <li id="tabPhilosophy"><a href="/philosophy/philosophy.html">Philosophy</a></li>
-          <li id="tabLicenses"><a href="/licenses/licenses.html">Licenses</a></li>	  
-          <li id="tabSoftware"><a href="/software/software.html">Downloads</a></li>
-          <li id="tabDoc"><a href="/doc/doc.html">Documentation</a></li>
-          <li><a href="/help/help.html">Help&nbsp;GNU</a></li>
-          <li id="joinfsftab"><a href="https://www.fsf.org/associate/support_freedom?referrer=4052">Join the FSF!</a></li>
-        </ul>
-
-	    	  	  <div id="searcher">
-
-  <form method="get" action="http://www.gnu.org/cgi-bin/estseek.cgi">
-   <div><label class="netscape4" for="phrase">Search:</label>
-   <input name="phrase" id="phrase" type="text" size="18" accesskey="s" value="Why GNU/Linux?" />
-   <input type="submit" value="Search" /></div>
-                                </form>
-                        </div>
-
-        </div>
-      </div>
-
-
-<div id="content" class="inner">
-<!-- end of banner.html -->
-
-
-<h2>How to use GNU licenses for your own software</h2>
-
-<p>This is a brief explanation of how to place a program under the <a
-href="/licenses/gpl.html">GNU General Public License</a>, <a
-href="/licenses/lgpl.html">Lesser General Public License</a>, or <a
-href="/licenses/agpl.html">Affero General Public License</a>.  For the
-<a href="/licenses/fdl.html">GNU Free Documentation License</a>, we have
-a <a href="/licenses/fdl-howto.html">separate page</a>.</p>
-
-<p>If you are looking for more detailed information, consider perusing
-our list of <a href="/licenses/gpl-faq.html">frequently asked questions
-about our licenses</a>.</p>
-
-<p>If you are considering using the GNU Lesser General Public License,
-please read the article &ldquo;<a href="/licenses/why-not-lgpl.html">Why
-you shouldn't use the LGPL for your next library</a>&rdquo; first.  The
-article explains why it may be better to use the ordinary GPL instead,
-and how we would make the decision.</p>
-
-<p>Whichever license you plan to use, the process involves adding two
-elements to each source file of your program: a copyright notice (such
-as &ldquo;Copyright 1999 Terry Jones&rdquo;), and a statement of copying
-permission, saying that the program is distributed under the terms of
-the GNU General Public License (or the Lesser GPL).</p>
-
-<p>The copyright notice should include the year in which you finished
-preparing the release (so if you finished it in 1998 but didn't post it
-until 1999, use 1998).  You should add the proper year for each release;
-for example, &ldquo;Copyright 1998, 1999 Terry Jones&rdquo; if some
-versions were finished in 1998 and some were finished in 1999.  If
-several people helped write the code, use all their names.</p>
-
-<p>For software with several releases over multiple years, it is best to
-spell out each year, in full, without using ranges or abbreviations, as
-in the example above.</p>
-
-<p>Always use the English word &ldquo;Copyright&rdquo;; by international
-convention, this is used worldwide, even for material in other
-languages. The copyright symbol &ldquo;&copy;&rdquo; can be included if
-you wish (and your character set supports it), but it's not necessary.
-There is no legal significance to using the three-character sequence
-&ldquo;(C)&rdquo;, although it does no harm.</p>
-
-<p>You should also include a copy of the license itself somewhere in the
-distribution of your program.  All programs, whether they are released
-under the GPL or LGPL, should include <a href="/licenses/gpl.txt">the
-text version of the GPL</a>.  In GNU programs the license is usually in
-a file called COPYING.</p>
-
-<p>If you are releasing your program under the LGPL, you should also
-include <a href="/licenses/lgpl.txt">the text version of the LGPL</a>,
-usually in a file called COPYING.LESSER.  Please note that, since the
-LGPL is a set of additional permissions on top of the GPL, it's important
-to include both licenses so users have all the materials they need to
-understand their rights.</p>
-
-<p>If you are releasing your program under the GNU AGPL, you only need to
-include <a href="/licenses/agpl.txt">the text version of the GNU
-AGPL</a>.</p>
-
-<p>If you have copied code from other programs covered by the same
-license, copy their copyright notices too.  Put all the copyright
-notices together, right near the top of each file.</p>
-
-<p>It is very important for practical reasons to include contact
-information for how to reach you, perhaps in the README file, but this
-has nothing to do with the legal issues of applying the license.</p>
-
-<p>The copying permission statement should come right after the
-copyright notices.  For a one-file program, the statement (for the GPL)
-should look like this:</p>
-
-<pre>
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
-</pre>
-
-<p>For programs that are more than one file, it is better to replace
-&ldquo;this program&rdquo; with the name of the program, and begin the
-statement with a line saying &ldquo;This file is part of NAME&rdquo;.
-For instance,</p>
-
-<pre>
-    This file is part of Foobar.
-
-    Foobar is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    Foobar is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with Foobar.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
-</pre>
-
-<p>This statement should go near the beginning of every source file,
-close to the copyright notices.  When using the Lesser GPL, insert the
-word &ldquo;Lesser&rdquo; before &ldquo;General&rdquo; in <em>all
-three</em> places.  When using the GNU AGPL, insert the
-word &ldquo;Affero&rdquo; before &ldquo;General&rdquo; in <em>all
-three</em> places.</p>
-
-<p>For interactive programs, it is usually a good idea to make the
-program print out a brief notice about copyright and copying permission
-when it starts up.  See <a href="/licenses/gpl-3.0.html#howto">the end
-of the GNU GPL</a> for more information about this.</p>
-
-<p>If you are releasing your program under the GNU AGPL, and it can
-interact with users over a network, the program should offer its source to
-those users in some way.  For example, if your program is a web
-application, its interface could display a &ldquo;Source&rdquo; link that
-leads users to an archive of the code.  The GNU AGPL is flexible enough
-that you can choose a method that's suitable for your specific
-program&mdash;see section 13 for details.</p>
-
-<p>There is no legal requirement to register your copyright with anyone;
-simply distributing the program makes it copyrighted.  However, it is a
-very good idea to register the copyright with the US Registry of
-Copyrights, because that puts you in a stronger position against anyone
-who violates the license in the US.  Most other countries have no system
-of copyright registration.</p>
-
-<p>It's wise to ask your employer or school, if any, to sign a
-copyright disclaimer for the work, so they cannot claim to hold it
-later.  Below is a sample copyright disclaimer; just alter the names
-and program description as appropriate:</p>
-
-<blockquote><p>Yoyodyne, Inc., hereby disclaims all copyright interest
-in the program &ldquo;Gnomovision&rdquo; (which makes passes at
-compilers) written by James Hacker.</p>
-
-<p>&lt;signature of Moe Ghoul&gt;, 1 April 1989<br />
-  Moe Ghoul, President of Vice</p></blockquote>
-
-<p>We would like to list all free software programs in the Free Software
-Directory, including all programs licensed under the GPL (any version).
-Please see the <a href="http://directory.fsf.org/">Directory web page</a>
-for information and an online submission form.</p>
-
-<p>It is also possible to make your program a GNU package, a part of the
-GNU Project.  (That's if we like the program&mdash;we have to look at it
-first, and decide.)  If you might be interested in joining up with the
-GNU Project in this way, please see our <a
-href="/help/evaluation.html">GNU software evaluation page</a> for more
-information and a short questionnaire.</p>
-
-<p>But you are welcome to use any of our licenses even if your program
-is not a GNU package; indeed, we hope you will.  They're available to
-everyone.  If you'd like to advertise your use of a particular license,
-feel free to use <a href="/graphics/license-logos.html"
-title="GNU License Logos">one of our logos</a>.</p>
-
-<!-- If needed, change the copyright block at the bottom. In general, -->
-<!-- all pages on the GNU web server should have the section about    -->
-<!-- verbatim copying.  Please do NOT remove this without talking     -->
-<!-- with the webmasters first. --> 
-<!-- Please make sure the copyright date is consistent with the document -->
-<!-- and that it is like this "2001, 2002" not this "2001-2002." -->
-
-</div>
-
-
-              
-<div class="inner">
-    
-<div class="yui-g" id="fsf-links">
-    <div class="yui-g first">
-
-        <div class="yui-u first" id="sitemap-1">
-
-          <p class="netscape4"><a href="#footer">Skip sitemap</a> or <a href="#sitemap-2">skip to licensing items</a></p>
-
-      <ul>
-	<li><a href="/gnu/gnu-history.html">GNU History</a></li>
-        <li><a href="/help/">Get involved</a>
-
-        <ul>
-
-          <li><a href="http://savannah.gnu.org/people/?type_id=1">Projects that need help</a></li>
-          <li><a href="/server/standards/translations/priorities.html#Languages">Help translate this website</a></li>
-        </ul></li>
-        <li><a href="/server/takeaction.html#unmaint">Take over an unmaintained package</a></li>
-        <li><a href="/server/takeaction.html#gnustep">Use GNUstep</a></li>
-	  <li><a href="/distros/free-distros.html">Download GNU</a></li>
-	  <li><a href="http://directory.fsf.org/GNU/">GNU packages</a></li>
-	  <li><a href="/manual/manual.html">Free documentation</a></li>
-	  <li><a href="http://lists.gnu.org/">GNU mailing lists</a></li>
-	  <li><a href="http://savannah.gnu.org/">GNU savannah</a></li>
-        <li><a href="http://libreplanet.org/">Connect with free software users</a></li>
-	<li><a href="/people/">GNU's Who?</a></li>
-	<li><a href="http://planet.gnu.org/">Planet GNU</a></li>
-	<li><a href="/contact/gnu-advisory.html">GNU Advisory Committee</a></li>
-      </ul>
-
-    </div>
-
-    <div class="yui-u" id="sitemap-2">
-
-          <p class="netscape4"><a href="#sitemap-3">Skip to general items</a></p>
-
-       <ul>
-        <li><a href="http://www.fsf.org/licensing">Software licensing</a>
-        <ul>
-        <li><a href="http://www.fsf.org/licensing/education">Licensing education</a></li>
-        <li><a href="/licenses">Free software licenses</a>
-        <ul>
-        <li><a href="/licenses/gpl.html">GNU GPL</a></li>
-
-        <li><a href="/licenses/agpl.html">GNU AGPL</a></li>
-        <li><a href="/licenses/lgpl.html">GNU LGPL</a></li>
-        <li><a href="/licenses/fdl.html">GNU FDL</a></li></ul></li>
-        <li><a href="/licenses/gpl-faq.html">Software licensing FAQ</a></li>
-        <li><a href="/licenses/gpl-faq.html">Licensing compliance</a></li>
-        <li><a href="/licenses/gpl-faq.html">How to use GNU licenses for your own software</a></li></ul></li>
-	<li><a href="http://www.fsf.org/resources/service/">GNU Service Directory</a></li>
-	<li><a href="/fun/fun.html">GNU Fun</a></li>
-	<li><a href="/graphics/graphics.html">GNU Art</a></li>
-	<li><a href="/music/music.html">Music &amp; Songs</a></li>
-
-      </ul>
-
-    
-    </div>
-    </div>
-    <div class="yui-g first">
-        <div class="yui-u first" id="sitemap-3">
-
-          <p class="netscape4"><a href="#sitemap-4">Skip to philosophical items</a></p>
-    
-      <ul>
-
-      <li><a href="http://www.fsf.org/news/">Latest News</a><ul>
-        <li><a href="http://www.fsf.org/events/">Upcoming Events</a></li>
-      <li><a href="http://www.fsf.org/blogs/">FSF Blogs</a></li></ul></li>
-      <li><a href="http://www.fsf.org/volunteer">Volunteering and internships</a></li>
-      <li><a href="http://www.fsf.org/resources/hw">Hardware Database</a></li>
-      <li><a href="http://directory.fsf.org">Free Software Directory</a></li>
-
-        <li><a href="http://www.fsf.org/resources/">Free Software Resources</a></li>
-      <li><a href="http://www.fsf.org/associate/">Associate Members</a></li>
-      <li><a href="http://www.fsf.org/associate/account/">My FSF Account</a></li>
-      <li class="noright"><a href="http://www.fsf.org/about/contact.html">Contact the FSF</a></li>
-      <li><a href="http://audio-video.gnu.org/">GNU Audio/Video</a></li>
-<li><a href="/accessibility/accessibility.html">Accessibility Statement</a></li>
-<li><a href="http://ftp.gnu.org/gnu/">GNU FTP Site</a>
-    and <a href="/prep/ftp.html">mirrors</a></li>
-<li><a href="/people/speakers.html">GNU Speakers</a></li>
-<li><a href="http://www.fsf.org/jobs">Free software jobs</a></li>
-      </ul>
-
-      
-    </div>
-        <div class="yui-u" id="sitemap-4">
-
-          <p class="netscape4"><a href="#ft">Skip list</a></p>
-
-      <ul>
-            <li><a href="http://donate.fsf.org">Donate to the FSF</a></li>
-        <li><a href="http://www.fsf.org/jfb">Join the FSF</a></li>
-
-        <li><a href="/philosophy/">Free software philosophy</a><ul>
-        <li><a href="/philosophy/free-sw.html">The Free Software Definition</a></li>
-        <li><a href="/philosophy/pragmatic.html">Copyleft: Pragmatic Idealism</a></li>
-        <li><a href="/philosophy/free-doc.html">Free Software and Free Manuals</a></li>
-        <li><a href="/philosophy/selling.html">Selling Free Software</a></li>
-        <li><a href="/philosophy/fs-motives.html">Motives for Writing Free Software</a></li>
-
-        <li><a href="/philosophy/right-to-read.html">The Right To Read</a></li>
-        <li><a href="/philosophy/open-source-misses-the-point.html">Why Open Source Misses the Point of Free Software</a></li></ul></li>
-      <li><a href="/software/for-windows.html">Free software for Windows</a></li>
-        <li><a href="http://defectivebydesign.org/">Defective by Design &mdash; Fight DRM</a></li>
-  <li><a href="http://windows7sins.org/">Windows 7 Sins</a></li>
-  <li><a href="http://playogg.org/">Support free media formats</a></li>
-        </ul>
-    </div>
-    </div>
-</div>
-
-<div class="yui-g" id="mission-statement">
-
-<p><small>The <a href="http://www.fsf.org">Free Software
-Foundation</a> is the principal organizational sponsor of the <a
-href="http://www.gnu.org/">GNU Operating System</a>. <strong>Our
-mission is to preserve, protect and promote the freedom to use, study,
-copy, modify, and redistribute computer software, and to defend the
-rights of Free Software users.</strong></small></p>
-
-<p><small><strong>Support GNU and the FSF by <a
-href="http://shop.fsf.org/">buying manuals and gear</a>, <a
-href="http://www.fsf.org/join">joining the FSF as an associate
-member</a> or by <a href="http://donate.fsf.org/">making a
-donation</a>.</strong></small></p>
-
-<p id="backtotop"><a href="#header">back to top</a></p>
-
-
-
-
-</div>
-
-
-</div>
-
-
-
-<div id="footer">
-
-<p>
-Please send FSF &amp; GNU inquiries to 
-<a href="mailto:gnu@gnu.org"><em>gnu@gnu.org</em></a>.
-There are also <a href="/contact/">other ways to contact</a> 
-the FSF.
-<br />
-Please send broken links and other corrections or suggestions to
-<a href="mailto:webmasters@gnu.org"><em>webmasters@gnu.org</em></a>.
-</p>
-
-<p>
-Please see the 
-<a href="/server/standards/README.translations.html">Translations
-README</a> for information on coordinating and submitting
-translations of this article.
-</p>
-
-<p>
-Copyright &copy; 2001, 2007, 2008, 2009 Free Software Foundation, Inc.,</p>
-<address>51 Franklin St, Fifth Floor, Boston, MA 02110, USA</address>
-<p>
-Verbatim copying and distribution of this entire article is
-permitted in any medium without royalty provided this notice is 
-preserved.
-</p>
-
-<p>
-Updated:
-<!-- timestamp start -->
-$Date: 2010/07/15 15:42:45 $
-<!-- timestamp end -->
-</p>
-</div>
-<div id="translations">
-<h4>Translations of this page</h4>
-
-<!-- Please keep this list alphabetical by language code. -->
-<!-- Comment what the language is for each type, i.e. de is German. -->
-<!-- Write the language name in its own language (Deutsch) in the text. -->
-<!-- If you add a new language here, please -->
-<!-- advise web-translators@gnu.org and add it to -->
-<!--  - /home/www/html/server/standards/README.translations.html -->
-<!--  - one of the lists under the section "Translations Underway" -->
-<!--  - if there is a translation team, you also have to add an alias -->
-<!--  to mail.gnu.org:/com/mailer/aliases -->
-<!-- Please also check you have the language code right; see: -->
-<!-- http://www.loc.gov/standards/iso639-2/php/code_list.php -->
-<!-- If the 2-letter ISO 639-1 code is not available, -->
-<!-- use the 3-letter ISO 639-2. -->
-<!-- Please use W3C normative character entities. -->
-
-<ul class="translations-list">
-<!-- Catalan -->
-<li><a href="/licenses/gpl-howto.ca.html">Catal&#x00e0;</a>&nbsp;[ca]</li>
-<!-- English -->
-<li><a href="/licenses/gpl-howto.html">English</a>&nbsp;[en]</li>
-<!-- Spanish -->
-<li><a href="/licenses/gpl-howto.es.html">espa&#x00f1;ol</a>&nbsp;[es]</li>
-<!-- French -->
-<li><a href="/licenses/gpl-howto.fr.html">Fran&#x00e7;ais</a>&nbsp;[fr]</li>
-<!-- Italian -->
-<li><a href="/licenses/gpl-howto.it.html">Italiano</a>&nbsp;[it]</li>
-<!-- Polish -->
-<li><a href="/licenses/gpl-howto.pl.html">Polski</a>&nbsp;[pl]</li>
-<!-- Brazilian Portuguese -->
-<li><a href="/licenses/gpl-howto.pt-br.html">portugu&#x0ea;s do Brasil</a>&nbsp;[pt-br]</li>
-</ul>
-</div>
-
-</div>
-</body>
-</html>
+  0. Additional Definitions.
+
+  As used herein, "this License" refers to version 3 of the GNU Lesser
+General Public License, and the "GNU GPL" refers to version 3 of the GNU
+General Public License.
+
+  "The Library" refers to a covered work governed by this License,
+other than an Application or a Combined Work as defined below.
+
+  An "Application" is any work that makes use of an interface provided
+by the Library, but which is not otherwise based on the Library.
+Defining a subclass of a class defined by the Library is deemed a mode
+of using an interface provided by the Library.
+
+  A "Combined Work" is a work produced by combining or linking an
+Application with the Library.  The particular version of the Library
+with which the Combined Work was made is also called the "Linked
+Version".
+
+  The "Minimal Corresponding Source" for a Combined Work means the
+Corresponding Source for the Combined Work, excluding any source code
+for portions of the Combined Work that, considered in isolation, are
+based on the Application, and not on the Linked Version.
+
+  The "Corresponding Application Code" for a Combined Work means the
+object code and/or source code for the Application, including any data
+and utility programs needed for reproducing the Combined Work from the
+Application, but excluding the System Libraries of the Combined Work.
+
+  1. Exception to Section 3 of the GNU GPL.
+
+  You may convey a covered work under sections 3 and 4 of this License
+without being bound by section 3 of the GNU GPL.
+
+  2. Conveying Modified Versions.
+
+  If you modify a copy of the Library, and, in your modifications, a
+facility refers to a function or data to be supplied by an Application
+that uses the facility (other than as an argument passed when the
+facility is invoked), then you may convey a copy of the modified
+version:
+
+   a) under this License, provided that you make a good faith effort to
+   ensure that, in the event an Application does not supply the
+   function or data, the facility still operates, and performs
+   whatever part of its purpose remains meaningful, or
+
+   b) under the GNU GPL, with none of the additional permissions of
+   this License applicable to that copy.
+
+  3. Object Code Incorporating Material from Library Header Files.
+
+  The object code form of an Application may incorporate material from
+a header file that is part of the Library.  You may convey such object
+code under terms of your choice, provided that, if the incorporated
+material is not limited to numerical parameters, data structure
+layouts and accessors, or small macros, inline functions and templates
+(ten or fewer lines in length), you do both of the following:
+
+   a) Give prominent notice with each copy of the object code that the
+   Library is used in it and that the Library and its use are
+   covered by this License.
+
+   b) Accompany the object code with a copy of the GNU GPL and this license
+   document.
+
+  4. Combined Works.
+
+  You may convey a Combined Work under terms of your choice that,
+taken together, effectively do not restrict modification of the
+portions of the Library contained in the Combined Work and reverse
+engineering for debugging such modifications, if you also do each of
+the following:
+
+   a) Give prominent notice with each copy of the Combined Work that
+   the Library is used in it and that the Library and its use are
+   covered by this License.
+
+   b) Accompany the Combined Work with a copy of the GNU GPL and this license
+   document.
+
+   c) For a Combined Work that displays copyright notices during
+   execution, include the copyright notice for the Library among
+   these notices, as well as a reference directing the user to the
+   copies of the GNU GPL and this license document.
+
+   d) Do one of the following:
+
+       0) Convey the Minimal Corresponding Source under the terms of this
+       License, and the Corresponding Application Code in a form
+       suitable for, and under terms that permit, the user to
+       recombine or relink the Application with a modified version of
+       the Linked Version to produce a modified Combined Work, in the
+       manner specified by section 6 of the GNU GPL for conveying
+       Corresponding Source.
+
+       1) Use a suitable shared library mechanism for linking with the
+       Library.  A suitable mechanism is one that (a) uses at run time
+       a copy of the Library already present on the user's computer
+       system, and (b) will operate properly with a modified version
+       of the Library that is interface-compatible with the Linked
+       Version.
+
+   e) Provide Installation Information, but only if you would otherwise
+   be required to provide such information under section 6 of the
+   GNU GPL, and only to the extent that such information is
+   necessary to install and execute a modified version of the
+   Combined Work produced by recombining or relinking the
+   Application with a modified version of the Linked Version. (If
+   you use option 4d0, the Installation Information must accompany
+   the Minimal Corresponding Source and Corresponding Application
+   Code. If you use option 4d1, you must provide the Installation
+   Information in the manner specified by section 6 of the GNU GPL
+   for conveying Corresponding Source.)
+
+  5. Combined Libraries.
+
+  You may place library facilities that are a work based on the
+Library side by side in a single library together with other library
+facilities that are not Applications and are not covered by this
+License, and convey such a combined library under terms of your
+choice, if you do both of the following:
+
+   a) Accompany the combined library with a copy of the same work based
+   on the Library, uncombined with any other library facilities,
+   conveyed under the terms of this License.
+
+   b) Give prominent notice with the combined library that part of it
+   is a work based on the Library, and explaining where to find the
+   accompanying uncombined form of the same work.
+
+  6. Revised Versions of the GNU Lesser General Public License.
+
+  The Free Software Foundation may publish revised and/or new versions
+of the GNU Lesser General Public License from time to time. Such new
+versions will be similar in spirit to the present version, but may
+differ in detail to address new problems or concerns.
+
+  Each version is given a distinguishing version number. If the
+Library as you received it specifies that a certain numbered version
+of the GNU Lesser General Public License "or any later version"
+applies to it, you have the option of following the terms and
+conditions either of that published version or of any later version
+published by the Free Software Foundation. If the Library as you
+received it does not specify a version number of the GNU Lesser
+General Public License, you may choose any version of the GNU Lesser
+General Public License ever published by the Free Software Foundation.
+
+  If the Library as you received it specifies that a proxy can decide
+whether future versions of the GNU Lesser General Public License shall
+apply, that proxy's public statement of acceptance of any version is
+permanent authorization for you to choose that version for the
+Library.
