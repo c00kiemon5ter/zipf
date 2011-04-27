@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-eqiv='content-type' content='text/html;charset=utf-8'>
+    <title>retrieve</title>
+    <link rel=stylesheet href="http://jashkenas.github.com/docco/resources/docco.css">
+</head>
+<body>
+<div id=container>
+    <div id=background></div>
+    <table cellspacing=0 cellpadding=0>
+    <thead>
+      <tr>
+        <th class=docs><h1>retrieve</h1></th>
+        <th class=code></th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr><td class='docs'><p>Copyright © 2010 Ivan Kanakarakis</p>
+
+<p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.</p>
+
+</pre></div></td></tr><tr><td class=docs>
+
+<p>default directories</p>
+
+</td><td class=code><div class=highlight><pre>
+<span class="c">#!/usr/bin/env bash</span>
+
+</pre></div></td></tr><tr><td class=docs>
+
+<p>default ouput files</p>
+
+</td><td class=code><div class=highlight><pre>
+<span class="nv">work_dir</span><span class="o">=</span><span class="s2">&quot;/tmp/zipf&quot;</span>
+<span class="nv">dumppath</span><span class="o">=</span><span class="s2">&quot;$work_dir/dumpfiles&quot;</span>
+<span class="nv">tokenpath</span><span class="o">=</span><span class="s2">&quot;$work_dir/tokens&quot;</span>
+<span class="nv">resultpath</span><span class="o">=</span><span class="s2">&quot;$work_dir/results&quot;</span>
+
+</pre></div></td></tr><tr><td class=docs>
+
+<p>fetch 10.000 random wikipedia pages</p>
+
+</td><td class=code><div class=highlight><pre>
+<span class="nv">mapfile</span><span class="o">=</span><span class="s2">&quot;$resultpath/rank.freq.map&quot;</span>
+<span class="nv">bvalfile</span><span class="o">=</span><span class="s2">&quot;$resultpath/bvalues.map&quot;</span>
+<span class="nv">plotdata</span><span class="o">=</span><span class="s2">&quot;$resultpath/rank.freq.plot&quot;</span>
+<span class="nv">plotimg</span><span class="o">=</span><span class="s2">&quot;$resultpath/zipf_plot_greek.png&quot;</span>
+
+</pre></div></td></tr><tr><td class=docs>
+
+<p>clean html, keep only clear text.
+try to remove any garbage.</p>
+
+</td><td class=code><div class=highlight><pre>
+fetch<span class="o">()</span> <span class="o">{</span>
+	<span class="nb">echo</span> <span class="s2">&quot;Starting fetch process..&quot;</span>
+	<span class="nb">local </span><span class="nv">src_url</span><span class="o">=</span><span class="s2">&quot;http://el.wikipedia.org/wiki/%CE%95%CE%B9%CE%B4%CE%B9%CE%BA%CF%8C:%CE%A4%CF%85%CF%87%CE%B1%CE%AF%CE%B1&quot;</span>
+
+	<span class="k">for </span>file in <span class="o">{</span>1..10000<span class="o">}</span>
+	<span class="k">do</span>
+<span class="k">		</span>elinks -dump -no-numbering -no-references <span class="s2">&quot;$src_url&quot;</span> &gt; <span class="s2">&quot;$dumppath/$file.raw&quot;</span>
+	<span class="k">done</span>
+
+<span class="k">	</span><span class="nb">echo</span> <span class="s2">&quot;Fetching done&quot;</span>
+<span class="o">}</span>
+
+</pre></div></td></tr><tr><td class=docs>
+
+<p>map rank to frequency for all words of all files</p>
+
+</td><td class=code><div class=highlight><pre>
+tokenize<span class="o">()</span> <span class="o">{</span>
+	<span class="nb">echo</span> <span class="s2">&quot;Processing tokens..&quot;</span>
+
+	<span class="nb">cd</span> <span class="s2">&quot;$dumppath&quot;</span>
+	<span class="nb">shopt</span> -s nullglob dotglob
+	<span class="nb">local </span><span class="nv">files</span><span class="o">=(</span>*<span class="o">)</span>
+	<span class="o">((</span> ! <span class="k">${#</span><span class="nv">files</span><span class="p">[*]</span><span class="k">}</span> <span class="o">))</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&quot;no data to process. try fetch first&quot;</span> <span class="o">&amp;&amp;</span> <span class="nb">exit </span>1
+	<span class="nb">shopt</span> -u nullglob dotglob
+
+	<span class="k">for </span>rawfile in <span class="s2">&quot;${files[@]}&quot;</span>
+	<span class="k">do</span>
+<span class="k">		</span><span class="nb">local </span><span class="nv">tokfile</span><span class="o">=</span><span class="s2">&quot;$tokenpath/${rawfile/raw/tok}&quot;</span>
+		sed -r <span class="s2">&quot;/.*(\s+Link|IMG|\s+\*|\s+_|^\[|^$).*/d&quot;</span> <span class="s2">&quot;$rawfile&quot;</span> &gt; <span class="s2">&quot;$tokfile&quot;</span>
+		sed -i <span class="s2">&quot;s/[^α-ωΑ-Ω]/\n/g&quot;</span> <span class="s2">&quot;$tokfile&quot;</span>
+		sed -i <span class="s2">&quot;/^$/d&quot;</span> <span class="s2">&quot;$tokfile&quot;</span>
+		sed -i <span class="s2">&quot;s/\(.*\)/\L\1/&quot;</span> <span class="s2">&quot;$tokfile&quot;</span>
+	<span class="k">done</span>
+
+<span class="k">	</span><span class="nb">echo</span> <span class="s2">&quot;Tokens ready&quot;</span>
+<span class="o">}</span>
+
+</pre></div></td></tr><tr><td class=docs>
+
+<p>calculate the <code>b</code> factor</p>
+
+<p>Zifp's Law:</p>
+
+<pre><code>  Freq = 1 / rank^b  =&gt;  log(Freq) = -b * log(rank)
+  =&gt; b = - log(Freq) / log(rank) = -log[rank](Freq)
+</code></pre>
+
+</td><td class=code><div class=highlight><pre>
+sortmap<span class="o">()</span> <span class="o">{</span>
+	<span class="nb">echo</span> <span class="s2">&quot;Mapping started..&quot;</span>
+
+	<span class="nb">cd</span> <span class="s2">&quot;$tokenpath&quot;</span>
+	<span class="nb">shopt</span> -s nullglob dotglob
+	<span class="nb">local </span><span class="nv">files</span><span class="o">=(</span>*<span class="o">)</span>
+	<span class="o">((</span> ! <span class="k">${#</span><span class="nv">files</span><span class="p">[*]</span><span class="k">}</span> <span class="o">))</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&quot;cannot read data. try tokenize first&quot;</span> <span class="o">&amp;&amp;</span> <span class="nb">exit </span>1
+	<span class="nb">shopt</span> -u nullglob dotglob
+
+	sort <span class="s2">&quot;${files[@]}&quot;</span> | uniq -ci | sort -nr | pr -n -t &gt; <span class="s2">&quot;$mapfile&quot;</span>
+
+	<span class="nb">echo</span> <span class="s2">&quot;Mapping complete&quot;</span>
+<span class="o">}</span>
+
+</pre></div></td></tr><tr><td class=docs>
+
+<p>visualize the results, create a graph plot.</p>
+
+</td><td class=code><div class=highlight><pre>
+calcb<span class="o">()</span> <span class="o">{</span>
+	<span class="nb">echo</span> <span class="s2">&quot;Calculating b for all words..&quot;</span>
+
+	<span class="o">[</span> ! -e <span class="s2">&quot;$mapfile&quot;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&quot;cannot read data. try mapping first&quot;</span> <span class="o">&amp;&amp;</span> <span class="nb">exit </span>1
+
+	<span class="nb">local </span><span class="nv">bval</span><span class="o">=</span>0 <span class="nv">bw</span><span class="o">=</span>0 <span class="nv">nwords</span><span class="o">=</span><span class="k">$(</span>wc -l &lt; <span class="s2">&quot;$mapfile&quot;</span><span class="k">)</span>
+	<span class="nb">echo</span> -e <span class="s2">&quot;Rank\tFrequency\tPn-Frequency\tb-value\t\tWord&quot;</span> &gt; <span class="s2">&quot;$bvalfile&quot;</span>
+
+	<span class="k">while </span><span class="nb">read </span>rank freq word
+	<span class="k">do</span>
+<span class="k">		</span><span class="nv">PnFreq</span><span class="o">=</span><span class="k">$(</span>bc -l &lt;&lt;&lt; <span class="s2">&quot;$freq / $nwords&quot;</span><span class="k">)</span>
+		<span class="o">((</span> <span class="s2">&quot;$rank&quot;</span> &lt;<span class="o">=</span> 1 <span class="o">))</span> <span class="o">&amp;&amp;</span> <span class="nv">bw</span><span class="o">=</span>0 <span class="o">||</span>
+		<span class="nv">bw</span><span class="o">=</span><span class="s2">&quot;$(bc -l &lt;&lt;&lt; &quot;</span>l<span class="o">(</span><span class="nv">$PnFreq</span><span class="o">)</span> / l<span class="o">(</span><span class="nv">$rank</span><span class="o">)</span><span class="s2">&quot;)&quot;</span>
+		<span class="nb">echo</span> -e <span class="s2">&quot;$rank\t$freq\t$PnFreq\t$bw\t$word&quot;</span> &gt;&gt; <span class="s2">&quot;$bvalfile&quot;</span>
+		<span class="nv">bval</span><span class="o">=</span><span class="s2">&quot;$(bc -l &lt;&lt;&lt; &quot;</span><span class="nv">$bval</span> + <span class="nv">$bw</span><span class="s2">&quot;)&quot;</span>
+	<span class="k">done</span> &lt; <span class="s2">&quot;$mapfile&quot;</span>
+	<span class="nv">bval</span><span class="o">=</span><span class="s2">&quot;$(bc -l &lt;&lt;&lt; &quot;</span><span class="nv">$bval</span> / <span class="nv">$nwords</span><span class="s2">&quot;)&quot;</span>
+	<span class="nb">echo</span> <span class="s2">&quot;Final b is $bval&quot;</span> &gt;&gt; <span class="s2">&quot;$bvalfile&quot;</span>
+
+	<span class="nb">echo</span> <span class="s2">&quot;Done calculating&quot;</span>
+<span class="o">}</span>
+
+</pre></div></td></tr><tr><td class=docs>
+
+<p>the standard usage function.</p>
+
+</td><td class=code><div class=highlight><pre>
+graph<span class="o">()</span> <span class="o">{</span>
+	<span class="nb">echo</span> <span class="s2">&quot;Starting graph creation&quot;</span>
+
+	<span class="o">[</span> ! -e <span class="s2">&quot;$mapfile&quot;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+		<span class="nb">echo</span> <span class="s2">&quot;cannot read data. try mapping first&quot;</span> <span class="o">&amp;&amp;</span> <span class="nb">exit </span>1
+
+	awk <span class="s1">&#39;{print $1 &quot; &quot; $2}&#39;</span> <span class="s2">&quot;$mapfile&quot;</span> &gt; <span class="s2">&quot;$plotdata&quot;</span>
+	gnuplot <span class="s">&lt;&lt; EOF</span>
+<span class="s">set logscale</span>
+<span class="s">set xlabel &quot;Rank&quot;</span>
+<span class="s">set ylabel &quot;Frequency&quot;</span>
+<span class="s">set title &quot;Zipf&#39;s Law - Greek language - Wikipedia documents collection&quot;</span>
+<span class="s">set term png</span>
+<span class="s">set output &quot;$plotimg&quot;</span>
+<span class="s">plot &quot;$plotdata&quot;</span>
+<span class="s">EOF</span>
+
+	<span class="nb">echo</span> <span class="s2">&quot;Graph created&quot;</span>
+<span class="o">}</span>
+
+</pre></div></td></tr><tr><td class=docs>
+
+<p>expect at least an argument</p>
+
+</td><td class=code><div class=highlight><pre>
+usage<span class="o">()</span> <span class="o">{</span>
+	cat <span class="s">&lt;&lt; EOF</span>
+<span class="s">usage: $(basename &quot;$0&quot;) options</span>
+
+<span class="s">	Options are:</span>
+<span class="s">	-a	all, same as -t -m -b -g [Note: no fetch]</span>
+<span class="s">	-f	fetch files</span>
+<span class="s">	-t	tokenize files</span>
+<span class="s">	-m	sort and map tokens - get rank and freq</span>
+<span class="s">	-b	calculate b</span>
+<span class="s">	-g	create graph plot</span>
+<span class="s">	-h	help, print this help message</span>
+<span class="s">EOF</span>
+<span class="o">}</span>
+
+</pre></div></td></tr><tr><td class=docs>
+
+<p>set up environment</p>
+
+</td><td class=code><div class=highlight><pre>
+<span class="o">((</span> !<span class="nv">$# </span><span class="o">))</span> <span class="o">&amp;&amp;</span> usage <span class="o">&amp;&amp;</span> <span class="nb">exit </span>1
+
+</pre></div></td></tr><tr><td class=docs>
+
+<p>parse arguments</p>
+
+</td><td class=code><div class=highlight><pre>
+mkdir -p <span class="s2">&quot;$work_dir&quot;</span> <span class="s2">&quot;$dumppath&quot;</span> <span class="s2">&quot;$tokenpath&quot;</span> <span class="s2">&quot;$resultpath&quot;</span>
+
+</pre></div></td></tr><tr><td class=docs>
+
+<p>all good :-)</p>
+
+</td><td class=code><div class=highlight><pre>
+<span class="k">case</span> <span class="s2">&quot;$1&quot;</span> in 
+	-a<span class="o">)</span> tokenize; sortmap; calcb; graph;;
+	-f<span class="o">)</span> fetch;;
+	-t<span class="o">)</span> tokenize;;
+	-m<span class="o">)</span> sortmap;;
+	-b<span class="o">)</span> calcb;;
+	-g<span class="o">)</span> graph;;
+	-h<span class="o">)</span> usage <span class="o">&amp;&amp;</span> <span class="nb">exit </span>0;;
+	*<span class="o">)</span> usage <span class="o">&amp;&amp;</span> <span class="nb">exit </span>1;;
+<span class="k">esac</span>
+
+</pre></div></td></tr><tr><td class=docs>
+
+</td><td class=code><div class=highlight><pre>
+<span class="nb">exit </span>0
+
+
+</pre></div></td></tr><tr><td class=docs>
+</td><td class=code><div class=highlight><pre></td><td class='code'></td></tr>
+    </tbody>
+    </table>
+</div>
+</body>
+</html>
