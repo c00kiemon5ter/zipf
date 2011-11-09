@@ -30,16 +30,12 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.</p>
 
-</pre></div></td></tr><tr><td class=docs>
-
-<p>default directories</p>
-
 </td><td class=code><div class=highlight><pre>
 <span class="c">#!/usr/bin/env bash</span>
 
 </pre></div></td></tr><tr><td class=docs>
 
-<p>default ouput files</p>
+<p>default directories</p>
 
 </td><td class=code><div class=highlight><pre>
 <span class="nv">work_dir</span><span class="o">=</span><span class="s2">&quot;/tmp/zipf&quot;</span>
@@ -49,7 +45,7 @@ along with this program.  If not, see <a href="http://www.gnu.org/licenses/">htt
 
 </pre></div></td></tr><tr><td class=docs>
 
-<p>fetch 10.000 random wikipedia pages</p>
+<p>default ouput files</p>
 
 </td><td class=code><div class=highlight><pre>
 <span class="nv">mapfile</span><span class="o">=</span><span class="s2">&quot;$resultpath/rank.freq.map&quot;</span>
@@ -59,8 +55,7 @@ along with this program.  If not, see <a href="http://www.gnu.org/licenses/">htt
 
 </pre></div></td></tr><tr><td class=docs>
 
-<p>clean html, keep only clear text.
-try to remove any garbage.</p>
+<p>fetch 10.000 random wikipedia pages</p>
 
 </td><td class=code><div class=highlight><pre>
 fetch<span class="o">()</span> <span class="o">{</span>
@@ -77,7 +72,8 @@ fetch<span class="o">()</span> <span class="o">{</span>
 
 </pre></div></td></tr><tr><td class=docs>
 
-<p>map rank to frequency for all words of all files</p>
+<p>clean html, keep only clear text.
+try to remove any garbage.</p>
 
 </td><td class=code><div class=highlight><pre>
 tokenize<span class="o">()</span> <span class="o">{</span>
@@ -103,13 +99,7 @@ tokenize<span class="o">()</span> <span class="o">{</span>
 
 </pre></div></td></tr><tr><td class=docs>
 
-<p>calculate the <code>b</code> factor</p>
-
-<p>Zifp's Law:</p>
-
-<pre><code>  Freq = 1 / rank^b  =&gt;  log(Freq) = -b * log(rank)
-  =&gt; b = - log(Freq) / log(rank) = -log[rank](Freq)
-</code></pre>
+<p>map rank to frequency for all words of all files</p>
 
 </td><td class=code><div class=highlight><pre>
 sortmap<span class="o">()</span> <span class="o">{</span>
@@ -128,7 +118,13 @@ sortmap<span class="o">()</span> <span class="o">{</span>
 
 </pre></div></td></tr><tr><td class=docs>
 
-<p>visualize the results, create a graph plot.</p>
+<p>calculate the <code>b</code> factor</p>
+
+<p>Zifp's Law:</p>
+
+<pre><code>  Freq = 1 / rank^b  =&gt;  log(Freq) = -b * log(rank)
+  =&gt; b = - log(Freq) / log(rank) = -log[rank](Freq)
+</code></pre>
 
 </td><td class=code><div class=highlight><pre>
 calcb<span class="o">()</span> <span class="o">{</span>
@@ -155,7 +151,7 @@ calcb<span class="o">()</span> <span class="o">{</span>
 
 </pre></div></td></tr><tr><td class=docs>
 
-<p>the standard usage function.</p>
+<p>visualize the results, create a graph plot.</p>
 
 </td><td class=code><div class=highlight><pre>
 graph<span class="o">()</span> <span class="o">{</span>
@@ -180,7 +176,7 @@ graph<span class="o">()</span> <span class="o">{</span>
 
 </pre></div></td></tr><tr><td class=docs>
 
-<p>expect at least an argument</p>
+<p>the standard usage function.</p>
 
 </td><td class=code><div class=highlight><pre>
 usage<span class="o">()</span> <span class="o">{</span>
@@ -200,21 +196,21 @@ usage<span class="o">()</span> <span class="o">{</span>
 
 </pre></div></td></tr><tr><td class=docs>
 
-<p>set up environment</p>
+<p>expect at least an argument</p>
 
 </td><td class=code><div class=highlight><pre>
 <span class="o">((</span> !<span class="nv">$# </span><span class="o">))</span> <span class="o">&amp;&amp;</span> usage <span class="o">&amp;&amp;</span> <span class="nb">exit </span>1
 
 </pre></div></td></tr><tr><td class=docs>
 
-<p>parse arguments</p>
+<p>set up environment</p>
 
 </td><td class=code><div class=highlight><pre>
 mkdir -p <span class="s2">&quot;$work_dir&quot;</span> <span class="s2">&quot;$dumppath&quot;</span> <span class="s2">&quot;$tokenpath&quot;</span> <span class="s2">&quot;$resultpath&quot;</span>
 
 </pre></div></td></tr><tr><td class=docs>
 
-<p>all good :-)</p>
+<p>parse arguments</p>
 
 </td><td class=code><div class=highlight><pre>
 <span class="k">case</span> <span class="s2">&quot;$1&quot;</span> in 
@@ -230,12 +226,17 @@ mkdir -p <span class="s2">&quot;$work_dir&quot;</span> <span class="s2">&quot;$d
 
 </pre></div></td></tr><tr><td class=docs>
 
+<p>all good :-)</p>
+
 </td><td class=code><div class=highlight><pre>
 <span class="nb">exit </span>0
 
 
 </pre></div></td></tr><tr><td class=docs>
-</td><td class=code><div class=highlight><pre></td><td class='code'></td></tr>
+
+</td><td class=code><div class=highlight><pre>
+
+</pre></div></td></tr><tr><td class=docs></td><td class='code'></td></tr>
     </tbody>
     </table>
 </div>
